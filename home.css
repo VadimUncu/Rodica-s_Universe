@@ -1,0 +1,1002 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ 
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  background-color: #F3F3F3;
+}
+
+.navigation,
+.navigation * {
+  box-sizing: border-box;
+}
+.navigation a {
+  text-decoration: none;
+}
+.navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+  position: relative;
+}
+.first-navigation {
+  padding: 32px 124px 0px 124px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  width: 1440px;
+}
+.frame-41 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-40 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 248px;
+  position: relative;
+}
+.frame-39 {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.facebook, .instagram {
+  color: #4b3f31;
+  text-align: left;
+  font-family: "Questrial-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 130%;
+  font-weight: 400;
+  position: relative;
+}
+.line-8 {
+  border-width: 0px 0px 0px 1px;
+  height: 24px;
+  border-left: 1px solid #DED8D1;
+  align-self: center;
+}
+.frame2 {
+  width: 24px;
+  height: 24px; 
+}
+.frame-36 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.rodica-s-universe {
+  color: rgb(0, 0, 0);
+  text-align: left;
+  font-family: "JosefinSans-Bold", sans-serif;
+  font-size: 40px;
+  line-height: 130%;
+  font-weight: 700;
+  position: relative;
+}
+.men-ine-o-via-s-n-toas {
+  color: #48535e;
+  text-align: left;
+  font-family: "Questrial-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 130%;
+  font-weight: 400;
+  position: relative;
+}
+.frame-37 {
+  border-style: solid;
+  border-color: var(--accent, #b6946e);
+  border-width: 1px;
+  padding: 12px 32px 12px 32px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 179px;
+  position: relative;
+}
+.aboneaz-te {
+  color: var(--title, #1d1001);
+  text-align: left;
+  font-family: "Questrial-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 130%;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: relative;
+}
+.line-9 {
+  border-style: solid;
+  border-color: #ded8d1;
+  border-width: 1px 0 0 0;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 0px;
+  position: relative;
+}
+.main-navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 1192px;
+  position: relative;
+}
+.frame-2 {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  font-family: Questrial;
+}
+.frame-2 li {
+  list-style: none;
+}
+.hover:hover{
+  background: #B6946E;
+  color: #FFF;
+  transition: 0.3s;
+}
+
+.frame-42  {
+  cursor: pointer;
+  background: none;
+}
+.hover {
+  padding: 0.5rem 2rem;
+}
+
+.frame-51 {
+
+  padding: 8px 32px 8px 32px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.acas, .blog, .despre-mine, .contacte {
+  color: #1d1001;
+  text-align: left;
+  font-family: "Questrial-Regular", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: relative;
+}
+.frame-42 {
+  border-width: 0px 0px 0px 1px;
+  padding: 8px 0px 8px 24px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  border-left: 1px solid #DED8D1;
+}
+
+.frame3 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+
+}
+.group {
+  height: auto;
+  position: absolute;
+  right: 6.25%;
+  left: 6.25%;
+  width: 87.5%;
+  bottom: 6.25%;
+  top: 6.25%;
+  height: 87.5%;
+}
+
+.input-search{
+  position: absolute;
+  height: 30px;
+  width: 48px;
+  border-style: none;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  transition: all .5s ease-in-out;
+  padding-right: 50px;
+  background-color: transparent;
+  right: 3px;
+  cursor: pointer;
+}
+.input-search::placeholder{
+  color:rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+.input-search:focus{
+  width: 450px;
+  transition: all 500ms;
+  cursor: auto;
+  color: #1d1001;
+  font-family: "Questrial-Regular", sans-serif;
+  border: none;
+  border-image:
+  linear-gradient(to right, transparent 20px,#c7bfbf 20px calc(100% - 20px),transparent 0) 5;
+  box-shadow:0px 0px 0px 1px #b6946e;
+  padding: 20px;
+  margin-right: -10px;
+}
+
+.container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.carousel {
+  width: 1352px;
+  height: 606px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fade{
+  animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+button {
+  cursor: pointer;
+}
+.arrow-right-svgrepo-com-1-1 {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 1312px;
+  top: 318px;
+  transform: translate(-20%, 0);
+  transition-duration: 0.5s;
+}
+
+.arrow-right-svgrepo-com-1-1:hover{
+  transform: scale(1.2);
+}
+.arrow-right-svgrepo-com-1-2:hover{
+  transform: scale(1.2);
+}
+
+.arrow-right-svgrepo-com-1-2 {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 0px;
+  top: 318px;
+  transform: translate(20%, 0);
+  transition-duration: 0.5s;
+}
+.carousel2 {
+  width: 1192px;
+  height: 606px;
+  position: relative;
+  top: 40px;
+  overflow: hidden;
+  display: none;
+}
+
+.frame-47 {
+  border-width: 1px 0px 0px 0px;
+  padding: 40px 334px 40px 334px;
+  position: relative;
+  top: 310px;
+  background: var(--gradients-white, linear-gradient(180deg, rgba(255, 255, 255, 0.85) 0%,rgba(255, 255, 255, 1.00) 100%));
+border-style: solid;
+border-color: var(--white, #ffffff);
+}
+.frame-49 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.frame-48 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.despre-via {
+  color: var(--accent, #b6946e);
+  text-align: left;
+  font-family: "JosefinSans-Bold", sans-serif;
+  font-size: 13px;
+  line-height: 130%;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+}
+.tr-ie-te-i-via-a-pe-deplin {
+  color: var(--title, #1d1001);
+  text-align: left;
+  font-family: "JosefinSans-Bold", sans-serif;
+  font-size: 40px;
+  line-height: 130%;
+  font-weight: 700;
+  position: relative;
+}
+.tr-ie-te-i-via-a-cu-pasiune-i-autenticitate-fiecare-zi-reprezint-o-oportunitate-de-a-descoperi-de-a-nv-a-i-de-a-experimenta-nu-am-na-fericirea-pentru-mai-t-rziu {
+  color: #71665a;
+  text-align: center;
+  font-family: "Questrial-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 130%;
+  font-weight: 400;
+  position: relative;
+  width: 524px;
+}
+
+.cite-te-acest-articol {
+  color: #000000;
+  text-align: left;
+  font-family: "JosefinSans-Medium", sans-serif;
+  font-size: 14px;
+  line-height: 130%;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: underline;
+  position: relative;
+}
+.arrow-right-svgrepo-com-1-12 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+
+.category-page,
+.category-page * {
+  box-sizing: border-box;
+}
+.category-page {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  position: relative;
+  top: 80px;
+}
+.blog-uri-pe-categorii {
+  color: var(--title, #1d1001);
+  text-align: left;
+  font-family: "JosefinSans-Bold", sans-serif;
+  font-size: 32px;
+  line-height: 130%;
+  font-weight: 700;
+  position: relative;
+}
+.frame-76 {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-73 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-66 {
+  flex-shrink: 0;
+  width: 381px;
+  height: 407px;
+  position: relative;
+}
+.frame-72 {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 381px;
+  position: relative;
+}
+.frame-71 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-93 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-70 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.nutri-ie {
+  color: #b68349;
+  text-align: left;
+  font-family: "JosefinSans-Bold", sans-serif;
+  font-size: 16px;
+  line-height: 130%;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+}
+.exploreaz-bogata-colec-ie-de-articole-din-categoria-nutri-ie {
+  color: #71665a;
+  text-align: center;
+  font-family: "Questrial-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 130%;
+  font-weight: 400;
+  position: relative;
+  width: 306px;
+}
+
+.descoper-nutri-ia {
+  color: #000000;
+  text-align: left;
+  font-family: "JosefinSans-Medium", sans-serif;
+  font-size: 13px;
+  line-height: 130%;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: underline;
+  position: relative;
+}
+
+.frame-74 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-92 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.s-n-tatea-mental {
+  color: #b68349;
+  text-align: left;
+  font-family: "JosefinSans-Bold", sans-serif;
+  font-size: 16px;
+  line-height: 130%;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+}
+.exploreaz-articole-menite-s-sprijine-bun-starea-ta-emo-ional-i-psihologic {
+  color: #71665a;
+  text-align: center;
+  font-family: "Questrial-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 130%;
+  font-weight: 400;
+  position: relative;
+  width: 306px;
+}
+.descoper-s-n-tate-mintal {
+  color: #000000;
+  text-align: left;
+  font-family: "JosefinSans-Medium", sans-serif;
+  font-size: 13px;
+  line-height: 130%;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: underline;
+  position: relative;
+}
+.arrow-right-svgrepo-com-1-12 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+.frame-75 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-91 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.via-a-activ {
+  color: #b68349;
+  text-align: left;
+  font-family: "JosefinSans-Bold", sans-serif;
+  font-size: 16px;
+  line-height: 130%;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+}
+.exploreaz-articole-cu-sfaturi-legate-de-fitness-antrenamente-nutri-ie-sportiv {
+  color: #71665a;
+  text-align: center;
+  font-family: "Questrial-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 130%;
+  font-weight: 400;
+  position: relative;
+  width: 306px;
+}
+.descoper-via-activ {
+  color: #000000;
+  text-align: left;
+  font-family: "JosefinSans-Medium", sans-serif;
+  font-size: 13px;
+  line-height: 130%;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: underline;
+  position: relative;
+}
+.arrow-right-svgrepo-com-1-13 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  
+}
+
+
+.about-rodica-section {
+  position: relative;
+  top: 100px;
+  width: 1192px;
+  margin: 0 auto;
+}
+.line-10 {
+  border-style: solid;
+  border-color: #ded8d1;
+  border-width: 1px 0 0 0;
+  position: relative;
+  transform: rotate(0deg) scale(1, 1);
+  width: 100%;
+  margin: 40px 0;
+}
+.frame-62 {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 1192px;
+}
+.frame-63 {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  position: relative;
+  width: 1000px;
+}
+.frame-61 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+  justify-content:  center;
+  width: 847px;
+  position: relative;
+}
+.frame-52 {
+  position: relative;
+  overflow: hidden;
+}
+.frame-53 {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  left: 40px;
+}
+.frame-90 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-64 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.p-rezentare {
+  color: var(--accent, #b6946e);
+  text-align: left;
+  font-family: "JosefinSans-Bold", sans-serif;
+  font-size: 13px;
+  line-height: 130%;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+}
+.hey-eu-sunt-rodica {
+  color: var(--title, #1d1001);
+  text-align: left;
+  font-family: "JosefinSans-Bold", sans-serif;
+  font-size: 32px;
+  line-height: 130%;
+  font-weight: 700;
+  position: relative;
+}
+.lorem-ipsum-dolor-sit-amet-consectetur-ac-purus-sed-habitant-amet-pellentesque-gravida-urna-eget-eget-a-orci-dignissim-enim-enim-amet-turpis-cursus-faucibus-dui-ut-sodales-dui-risus-bibendum-sagittis-amet-nisl-ornare-neque-pharetra-phasellus-nibh-eu-sollicitudin-tristique-ultrices-ultricies-egestas-amet-magna-morbi-auctor-faucibus-amet {
+  color: #71665a;
+  text-align: left;
+  font-family: "Questrial-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 400;
+  position: relative;
+  width: 382px;
+}
+.frame-512 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-56 {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-55 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.frame-57 li {
+  list-style: none;
+}
+.a-fl-mai-multe-despre-mine {
+  color: #000000;
+  text-align: left;
+  font-family: "JosefinSans-Medium", sans-serif;
+  font-size: 14px;
+  line-height: 130%;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: underline;
+  position: relative;
+}
+.arrow-right-svgrepo-com-1-11 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.line-12 {
+  border-style: solid;
+  border-color: #ded8d1;
+  border-width: 1px 0 0 0;
+  width: 434px;
+  position: relative;
+  transform: rotate(-90deg) scale(1, 1);
+}
+.frame-58 {
+  gap: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  text-decoration: none;
+}
+
+.list a {
+  text-decoration: none;
+}
+.link-uri-rapide {
+  color: #71665a;
+  text-align: left;
+  font-family: "JosefinSans-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 130%;
+  font-weight: 400;
+  position: relative;
+}
+.frame-57 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.nutri-ie-i-recete {
+  color: #000000;
+  text-align: left;
+  font-family: "JosefinSans-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 130%;
+  font-weight: 400;
+  position: relative;
+}
+
+
+.frame-40 {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-39 {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+.frame2 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+
+/* footer */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  width: 1440px;
+  position: relative;
+  top: 150px;
+}
+.line-1 {
+  border-style: solid;
+  border-color: #b8a794;
+  border-width: 1px 0 0 0;
+  align-self: stretch;
+  position: relative;
+}
+.rodica-s-universe {
+  color: #000000;
+  text-align: left;
+  font-family: "JosefinSans-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  position: relative;
+}
+.frame-107 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-105 {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.frame-105 li {
+  list-style: none;
+}
+.frame-105 a {
+  text-decoration: none;
+}
+.acas {
+  color: var(--title, #1d1001);
+  text-align: left;
+  font-family: "Questrial-Regular", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.blog {
+  color: var(--title, #1d1001);
+  text-align: left;
+  font-family: "Questrial-Regular", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: relative;
+}
+.despre-mine {
+  color: var(--title, #1d1001);
+  text-align: left;
+  font-family: "Questrial-Regular", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: relative;
+}
+.contacte {
+  color: var(--title, #1d1001);
+  text-align: left;
+  font-family: "Questrial-Regular", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: relative;
+}
+.frame-401 {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-391 {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+
+
+.rodica-s-universe-copyrighted-2024 {
+  color: #b8a794;
+  font-family: "Questrial-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+}
+.frame-402 {
+  display: flex;
+  gap: 16px;
+}
+
+
+
+
+
