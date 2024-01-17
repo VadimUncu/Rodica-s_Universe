@@ -176,7 +176,7 @@ body {
   position: absolute;
   width: 0px;
   height: 2px;
-  left: 40%;
+  left: 50%;
   bottom:0;
   background-color: #B6946E;
   transition: all ease-in-out .2s;
@@ -256,14 +256,14 @@ body {
   pointer-events: painted;  
 }
 .btn-search:focus ~ .input-search{
-  width: 300px;
+  width: 400px;
   border-radius: 0px;
   background-color: transparent;
   border:1px solid #B6946E;
   transition: all 500ms ;
 }
 .input-search:focus{
-  width: 300px;
+  width: 400px;
   border-radius: 0px;
   background-color: transparent;
   border:1px solid #B6946E;
