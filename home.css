@@ -229,7 +229,6 @@ body {
   font-size: 18px;
   letter-spacing: 2px;
   outline: none;
-  border-radius: 25px;
   transition: all .5s ease-in-out;
   background-color: transparent;
   padding-right: 40px;
@@ -249,22 +248,15 @@ body {
   font-weight: bold;
   outline: none;
   cursor: pointer;
-  border-radius: 50%;
+
   position: absolute;
   right: 0px;
   background-color:transparent;
   pointer-events: painted;  
 }
-.btn-search:focus ~ .input-search{
-  width: 400px;
-  border-radius: 0px;
-  background-color: transparent;
-  border:1px solid #B6946E;
-  transition: all 500ms ;
-}
+
 .input-search:focus{
   width: 400px;
-  border-radius: 0px;
   background-color: transparent;
   border:1px solid #B6946E;
   transition: all 500ms ;
