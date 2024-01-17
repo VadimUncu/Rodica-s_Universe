@@ -119,7 +119,7 @@ body {
   border-style: solid;
   border-color: var(--accent, #b6946e);
   border-width: 1px;
-  padding: 12px 32px 12px 32px;
+  padding: 12px 31px 12px 31px;
   display: flex;
   flex-direction: row;
   gap: 8px;
@@ -160,7 +160,7 @@ body {
 .frame-2 {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
+  gap: 5rem;
   align-items: center;
   justify-content: flex-start;
   align-self: stretch;
@@ -171,18 +171,26 @@ body {
 .frame-2 li {
   list-style: none;
 }
-.hover:hover{
-  background: #B6946E;
-  color: #FFF;
-  transition: 0.3s;
+.hover::after{
+  content: '';
+  position: absolute;
+  width: 0px;
+  height: 2px;
+  left: 40%;
+  bottom:0;
+  background-color: #B6946E;
+  transition: all ease-in-out .2s;
 }
-
+.hover:hover::after{
+  width: 100%;
+  left: 0;
+}
 .frame-42  {
   cursor: pointer;
   background: none;
 }
 .hover {
-  padding: 0.5rem 2rem;
+  padding: 0.5rem;
 }
 
 .frame-51 {
@@ -206,6 +214,7 @@ body {
   font-weight: 400;
   text-transform: uppercase;
   position: relative;
+  display: flex;
 }
 .frame-42 {
   border-width: 0px 0px 0px 1px;
@@ -924,45 +933,7 @@ border-color: var(--white, #ffffff);
 .frame-105 a {
   text-decoration: none;
 }
-.acas {
-  color: var(--title, #1d1001);
-  text-align: left;
-  font-family: "Questrial-Regular", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  text-transform: uppercase;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-.blog {
-  color: var(--title, #1d1001);
-  text-align: left;
-  font-family: "Questrial-Regular", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  text-transform: uppercase;
-  position: relative;
-}
-.despre-mine {
-  color: var(--title, #1d1001);
-  text-align: left;
-  font-family: "Questrial-Regular", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  text-transform: uppercase;
-  position: relative;
-}
-.contacte {
-  color: var(--title, #1d1001);
-  text-align: left;
-  font-family: "Questrial-Regular", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  text-transform: uppercase;
-  position: relative;
-}
+
 .frame-401 {
   display: flex;
   flex-direction: row;
