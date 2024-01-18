@@ -1,964 +1,1053 @@
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
- 
 body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .container {
-  width: 1440px;
-  margin: 0 auto;
-  background-color: #f3eff5;
+    width: 1440px;
+    margin: 0 auto;
+    background-color: #f3eff5;
 }
 
 .navigation,
 .navigation * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 .navigation a {
-  text-decoration: none;
+    text-decoration: none;
 }
+
 .navigation {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  align-items: center;
-  position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    position: relative;
 }
+
 .first-navigation {
-  padding: 32px 124px 0px 124px;
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  position: relative;
-  max-width: 1440px;
-  width: 1440px;
+    padding: 32px 124px 0px 124px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    max-width: 1440px;
+    width: 1440px;
 }
- video {
-  width: 100%;
-  height: 7rem;
-  position: absolute;
-  object-fit: cover;
-  top: 0;
+
+video {
+    width: 100%;
+    height: 6.9rem;
+    position: absolute;
+    object-fit: cover;
+    top: 0;
 }
+
 .frame-41 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  align-self: stretch;
-  flex-shrink: 0;
-  position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
 }
+
 .frame-40 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  flex-shrink: 0;
-  position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+    position: relative;
 }
+
 .frame-39 {
-  display: flex;
-  flex-direction: row;
-  gap: 4px;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  position: relative;
-  padding: 0.2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    padding: 0.2rem;
 }
+
 .frame21:hover {
-  background-color: rgb(236, 220, 235);
-  transition: 0.2s;
-  border: 1px solid #b6946e;
-  opacity: 0.9;
+    background-color: rgb(236, 220, 235);
+    transition: 0.2s;
+    border: 1px solid #b6946e;
+    opacity: 0.9;
 }
 
 .line-8 {
-  border-width: 0px 0px 0px 1px;
-  height: 24px;
-  border-left: 1px solid #a19280;
-  align-self: center;
+    border-width: 0px 0px 0px 1px;
+    height: 24px;
+    border-left: 1px solid #a19280;
+    align-self: center;
 }
+
 .frame21 {
-  width: 24px;
-  height: 24px; 
-  border: 1px solid transparent;
-  background-color: rgba(2, 2, 2, 0.4);
+    width: 24px;
+    height: 24px;
+    border: 1px solid transparent;
+    background-color: rgba(2, 2, 2, 0.4);
 }
+
 .frame-36 {
-  display: flex;
-  flex-direction: column;
-  gap: 0px;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
 }
 
 .logo {
-  width: 10rem;
-  height: 10rem;
-  position: absolute;
-  top: -5.9rem;
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    top: -5.9rem;
 }
 
 .frame-37 {
-  border-style: solid;
-  border-color: var(--accent, #b6946e);
-  border-width: 1px;
-  padding: 12px 31px 12px 31px;
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  width: 179px;
-  position: relative;
+    border-style: solid;
+    border-color: var(--accent, #b6946e);
+    border-width: 1px;
+    padding: 12px 31px 12px 31px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 179px;
+    position: relative;
 }
-.frame-37:hover{
-background-color: rgb(236, 220, 235, 0.8);
-transition: 0.2s;
+
+.frame-37:hover {
+    background-color: rgb(236, 220, 235, 0.8);
+    transition: 0.2s;
 }
-.frame-37:hover div{
-  color: #1d1001;
-  transition: 0.2s;
-  }
+
+.frame-37:hover div {
+    color: #1d1001;
+    transition: 0.2s;
+}
+
 .aboneaz-te {
-  color: #ece8e3;
-  text-align: left;
-  font-family: "Questrial-Regular", sans-serif;
-  font-size: 16px;
-  line-height: 130%;
-  font-weight: 400;
-  text-transform: uppercase;
-  position: relative;
+    color: #ece8e3;
+    text-align: left;
+    font-family: "Questrial-Regular", sans-serif;
+    font-size: 16px;
+    line-height: 130%;
+    font-weight: 400;
+    text-transform: uppercase;
+    position: relative;
 }
 
-
-
+.sticky {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
 
 .main-navigation {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1192px;
-  width: 1192px;
-  position: relative;
-  margin-top: 1.8rem;
-  margin-bottom: -0.9rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1192px;
+    width: 1192px;
+    position: relative;
+    margin-bottom: -0.9rem;
+    height: 5rem;
+    background-color: #f3eff5;
 }
+
 .frame-2 {
-  display: flex;
-  flex-direction: row;
-  gap: 3rem;
-  align-items: center;
-  justify-content: flex-start;
-  position: relative;
-  font-family: Questrial;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    font-family: Questrial;
 }
+
 .frame-2 li {
-  list-style: none;
+    list-style: none;
 }
-.hover::after{
-  content: '';
-  position: absolute;
-  width: 0px;
-  height: 1px;
-  left: 50%;
-  bottom:0;
-  background-color: #B6946E;
-  transition: all ease-in-out .2s;
+
+.hover::after {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 1px;
+    left: 50%;
+    bottom: 0;
+    background-color: #B6946E;
+    transition: all ease-in-out .2s;
 }
-.hover:hover::after{
-  width: 100%;
-  left: 0;
+
+.hover:hover::after {
+    width: 100%;
+    left: 0;
 }
 
 .hover {
-  padding: 0.5rem;
+    padding: 0.5rem;
 }
 
-.acas, .blog, .despre-mine, .contacte {
-  color: #1d1001;
-  text-align: left;
-  font-family: "Questrial-Regular", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  text-transform: uppercase;
-  position: relative;
-  display: flex;
-}
-.search-box{
-  width: fit-content;
-  height: fit-content;
-  position: relative;
-  border-style: solid;
-  border-color: #ded8d1;
-  border-width: 0px 0px 0px 1px;
-}
-.input-search{
-  height: 40px;
-  width: 40px;
-  border-style: none;
-  padding: 10px;
-  font-size: 18px;
-  letter-spacing: 2px;
-  outline: none;
-  transition: all .5s ease-in-out;
-  background-color: transparent;
-  padding-right: 40px;
-  color:#1D1001;
-}
-.input-search::placeholder{
-  color:rgba(97, 89, 89, 0.5);
-  font-size: 18px;
-  letter-spacing: 2px;
-  font-weight: 100;
-}
-.btn-search{
-  width: 40px;
-  height: 40px;
-  border-style: none;
-  font-size: 20px;
-  font-weight: bold;
-  outline: none;
-  cursor: pointer;
-  position: absolute;
-  right: 0px;
-  background-color:transparent;
-  pointer-events: painted;  
+.acas,
+.blog,
+.despre-mine,
+.contacte {
+    color: #1d1001;
+    text-align: left;
+    font-family: "Questrial-Regular", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    position: relative;
+    display: flex;
 }
 
-.btn-search:hover{ 
-  transform: scale(1.2); 
-  transition-duration: 0.2s;
+.search-box {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    border-style: solid;
+    border-color: #ded8d1;
+    border-width: 0px 0px 0px 1px;
 }
 
-.input-search:focus{
-  width: 400px;
-  background-color: transparent;
-  border:1px solid #B6946E;
-  transition: all 500ms ;
+.input-search {
+    height: 40px;
+    width: 40px;
+    border-style: none;
+    padding: 10px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    outline: none;
+    transition: all .5s ease-in-out;
+    background-color: transparent;
+    padding-right: 40px;
+    color: #1D1001;
+}
+
+.input-search::placeholder {
+    color: rgba(97, 89, 89, 0.5);
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+
+.btn-search {
+    width: 40px;
+    height: 40px;
+    border-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    right: 0px;
+    background-color: transparent;
+    pointer-events: painted;
+}
+
+.btn-search:hover {
+    transform: scale(1.2);
+    transition-duration: 0.2s;
+}
+
+.input-search:focus {
+    width: 400px;
+    background-color: transparent;
+    border: 1px solid #B6946E;
+    transition: all 500ms;
 }
 
 .fa-search {
-color: #B6946E;
-width: 24px;
-height: 24px;
+    color: #B6946E;
+    width: 24px;
+    height: 24px;
 }
 
 .container1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-.carousel {
-  max-width: 1352px;
-  width: 1352px;
-  height: 606px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.fade{
-  animation-name: fade;
-    animation-duration: 1.5s;
-}
-@keyframes fade {
-  0% {
-    transform: scale(0);
-  }
-  50% {
-    transform: scale(1);
-  }
-}
-button {
-  cursor: pointer;
-}
-.arrow-right-svgrepo-com-1-1 {
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  left: 1312px;
-  top: 318px;
-  transform: translate(-20%, 0);
-  transition-duration: 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
-.arrow-right-svgrepo-com-1-1:hover{
-  transform: scale(1.2);
+.carousel {
+    max-width: 1352px;
+    width: 1352px;
+    height: 606px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.arrow-right-svgrepo-com-1-2:hover{
-  transform: scale(1.2);
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1);
+    }
+}
+
+button {
+    cursor: pointer;
+}
+
+.arrow-right-svgrepo-com-1-1 {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 1312px;
+    top: 318px;
+    transform: translate(-20%, 0);
+    transition-duration: 0.2s;
+}
+
+.arrow-right-svgrepo-com-1-1:hover {
+    transform: scale(1.2);
+}
+
+.arrow-right-svgrepo-com-1-2:hover {
+    transform: scale(1.2);
 }
 
 .arrow-right-svgrepo-com-1-2 {
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  left: 0px;
-  top: 318px;
-  transform: translate(20%, 0);
-  transition-duration: 0.2s;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 0px;
+    top: 318px;
+    transform: translate(20%, 0);
+    transition-duration: 0.2s;
 }
+
 .carousel2 {
-  width: 1192px;
-  height: 606px;
-  position: relative;
-  top: 40px;
-  overflow: hidden;
-  display: none;
+    width: 1192px;
+    height: 606px;
+    position: relative;
+    top: 40px;
+    right: 0.2rem;
 }
 
 .frame-47 {
-  border-width: 1px 0px 0px 0px;
-  padding: 40px 334px 40px 334px;
-  position: relative;
-  top: 310px;
-  background: var(--gradients-white, linear-gradient(180deg, rgba(202, 184, 200, 0.85) 0%,rgba(255, 255, 255, 1.00) 100%));
-border-style: solid;
-border-color: var(--white, #a897b3);
+    border-width: 1px 0px 0px 0px;
+    padding: 40px 334px 40px 334px;
+    position: relative;
+    top: 310px;
+    background: var(--gradients-white, linear-gradient(180deg, rgba(202, 184, 200, 0.85) 0%, rgba(255, 255, 255, 1.00) 100%));
+    border-style: solid;
+    border-color: var(--white, #a897b3);
 }
+
 .frame-49 {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
+
 .frame-48 {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  align-items: center;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
 }
+
 .despre-via {
-  color: var(--accent, #b6946e);
-  text-align: left;
-  font-family: "JosefinSans-Bold", sans-serif;
-  font-size: 13px;
-  line-height: 130%;
-  font-weight: 700;
-  text-transform: uppercase;
-  position: relative;
+    color: var(--accent, #b6946e);
+    text-align: left;
+    font-family: "JosefinSans-Bold", sans-serif;
+    font-size: 13px;
+    line-height: 130%;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
 }
+
 .tr-ie-te-i-via-a-pe-deplin {
-  color: var(--title, #1d1001);
-  text-align: left;
-  font-family: "JosefinSans-Bold", sans-serif;
-  font-size: 40px;
-  line-height: 130%;
-  font-weight: 700;
-  position: relative;
+    color: var(--title, #1d1001);
+    text-align: left;
+    font-family: "JosefinSans-Bold", sans-serif;
+    font-size: 40px;
+    line-height: 130%;
+    font-weight: 700;
+    position: relative;
 }
+
 .tr-ie-te-i-via-a-cu-pasiune-i-autenticitate-fiecare-zi-reprezint-o-oportunitate-de-a-descoperi-de-a-nv-a-i-de-a-experimenta-nu-am-na-fericirea-pentru-mai-t-rziu {
-  color: #71665a;
-  text-align: center;
-  font-family: "Questrial-Regular", sans-serif;
-  font-size: 16px;
-  line-height: 130%;
-  font-weight: 400;
-  position: relative;
-  width: 524px;
+    color: #71665a;
+    text-align: center;
+    font-family: "Questrial-Regular", sans-serif;
+    font-size: 16px;
+    line-height: 130%;
+    font-weight: 400;
+    position: relative;
+    width: 524px;
 }
 
 .cite-te-acest-articol {
-  color: #000000;
-  text-align: left;
-  font-family: "JosefinSans-Medium", sans-serif;
-  font-size: 14px;
-  line-height: 130%;
-  font-weight: 500;
-  text-transform: uppercase;
-  text-decoration: underline;
-  position: relative;
+    color: #000000;
+    text-align: left;
+    font-family: "JosefinSans-Medium", sans-serif;
+    font-size: 14px;
+    line-height: 130%;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: underline;
+    position: relative;
 }
+
 .arrow-right-svgrepo-com-1-12 {
-  flex-shrink: 0;
-  width: 24px;
-  height: 24px;
-  position: relative;
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    position: relative;
 }
 
 .category-page,
 .category-page * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 .category-page {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  align-items: center;
-  position: relative;
-  top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    position: relative;
+    top: 80px;
 }
+
 .blog-uri-pe-categorii {
-  color: var(--title, #1d1001);
-  text-align: left;
-  font-family: "JosefinSans-Bold", sans-serif;
-  font-size: 32px;
-  line-height: 130%;
-  font-weight: 700;
-  position: relative;
+    color: var(--title, #1d1001);
+    text-align: left;
+    font-family: "JosefinSans-Bold", sans-serif;
+    font-size: 32px;
+    line-height: 130%;
+    font-weight: 700;
+    position: relative;
 }
+
 .frame-76 {
-  display: flex;
-  flex-direction: row;
-  gap: 24px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
 }
+
 .frame-73 {
-  display: flex;
-  flex-direction: column;
-  gap: 0px;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
 }
+
 .frame-66 {
-  flex-shrink: 0;
-  width: 381px;
-  height: 407px;
-  position: relative;
+    flex-shrink: 0;
+    width: 381px;
+    height: 407px;
+    position: relative;
 }
+
 .frame-72 {
-  padding: 24px;
-  display: flex;
-  flex-direction: column;
-  gap: 0px;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  width: 381px;
-  position: relative;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 381px;
+    position: relative;
 }
+
 .frame-71 {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  align-items: center;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
 }
+
 .frame-93 {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  align-items: center;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
 }
+
 .frame-70 {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  align-items: center;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
 }
+
 .nutri-ie {
-  color: #b68349;
-  text-align: left;
-  font-family: "JosefinSans-Bold", sans-serif;
-  font-size: 16px;
-  line-height: 130%;
-  font-weight: 700;
-  text-transform: uppercase;
-  position: relative;
+    color: #b68349;
+    text-align: left;
+    font-family: "JosefinSans-Bold", sans-serif;
+    font-size: 16px;
+    line-height: 130%;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
 }
+
 .exploreaz-bogata-colec-ie-de-articole-din-categoria-nutri-ie {
-  color: #71665a;
-  text-align: center;
-  font-family: "Questrial-Regular", sans-serif;
-  font-size: 16px;
-  line-height: 130%;
-  font-weight: 400;
-  position: relative;
-  width: 306px;
+    color: #71665a;
+    text-align: center;
+    font-family: "Questrial-Regular", sans-serif;
+    font-size: 16px;
+    line-height: 130%;
+    font-weight: 400;
+    position: relative;
+    width: 306px;
 }
 
 .descoper-nutri-ia {
-  color: #000000;
-  text-align: left;
-  font-family: "JosefinSans-Medium", sans-serif;
-  font-size: 13px;
-  line-height: 130%;
-  font-weight: 500;
-  text-transform: uppercase;
-  text-decoration: underline;
-  position: relative;
+    color: #000000;
+    text-align: left;
+    font-family: "JosefinSans-Medium", sans-serif;
+    font-size: 13px;
+    line-height: 130%;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: underline;
+    position: relative;
 }
 
 .frame-74 {
-  display: flex;
-  flex-direction: column;
-  gap: 0px;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  position: relative;
-}
-.frame-92 {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  align-items: center;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  position: relative;
-}
-.s-n-tatea-mental {
-  color: #b68349;
-  text-align: left;
-  font-family: "JosefinSans-Bold", sans-serif;
-  font-size: 16px;
-  line-height: 130%;
-  font-weight: 700;
-  text-transform: uppercase;
-  position: relative;
-}
-.exploreaz-articole-menite-s-sprijine-bun-starea-ta-emo-ional-i-psihologic {
-  color: #71665a;
-  text-align: center;
-  font-family: "Questrial-Regular", sans-serif;
-  font-size: 16px;
-  line-height: 130%;
-  font-weight: 400;
-  position: relative;
-  width: 306px;
-}
-.descoper-s-n-tate-mintal {
-  color: #000000;
-  text-align: left;
-  font-family: "JosefinSans-Medium", sans-serif;
-  font-size: 13px;
-  line-height: 130%;
-  font-weight: 500;
-  text-transform: uppercase;
-  text-decoration: underline;
-  position: relative;
-}
-.arrow-right-svgrepo-com-1-12 {
-  flex-shrink: 0;
-  width: 24px;
-  height: 24px;
-  position: relative;
-}
-.frame-75 {
-  display: flex;
-  flex-direction: column;
-  gap: 0px;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  position: relative;
-}
-.frame-91 {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  align-items: center;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  position: relative;
-}
-.via-a-activ {
-  color: #b68349;
-  text-align: left;
-  font-family: "JosefinSans-Bold", sans-serif;
-  font-size: 16px;
-  line-height: 130%;
-  font-weight: 700;
-  text-transform: uppercase;
-  position: relative;
-}
-.exploreaz-articole-cu-sfaturi-legate-de-fitness-antrenamente-nutri-ie-sportiv {
-  color: #71665a;
-  text-align: center;
-  font-family: "Questrial-Regular", sans-serif;
-  font-size: 16px;
-  line-height: 130%;
-  font-weight: 400;
-  position: relative;
-  width: 306px;
-}
-.descoper-via-activ {
-  color: #000000;
-  text-align: left;
-  font-family: "JosefinSans-Medium", sans-serif;
-  font-size: 13px;
-  line-height: 130%;
-  font-weight: 500;
-  text-transform: uppercase;
-  text-decoration: underline;
-  position: relative;
-}
-.arrow-right-svgrepo-com-1-13 {
-  flex-shrink: 0;
-  width: 24px;
-  height: 24px;
-  position: relative;
-  
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
 }
 
+.frame-92 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.s-n-tatea-mental {
+    color: #b68349;
+    text-align: left;
+    font-family: "JosefinSans-Bold", sans-serif;
+    font-size: 16px;
+    line-height: 130%;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.exploreaz-articole-menite-s-sprijine-bun-starea-ta-emo-ional-i-psihologic {
+    color: #71665a;
+    text-align: center;
+    font-family: "Questrial-Regular", sans-serif;
+    font-size: 16px;
+    line-height: 130%;
+    font-weight: 400;
+    position: relative;
+    width: 306px;
+}
+
+.descoper-s-n-tate-mintal {
+    color: #000000;
+    text-align: left;
+    font-family: "JosefinSans-Medium", sans-serif;
+    font-size: 13px;
+    line-height: 130%;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: underline;
+    position: relative;
+}
+
+.arrow-right-svgrepo-com-1-12 {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    position: relative;
+}
+
+.frame-75 {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.frame-91 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.via-a-activ {
+    color: #b68349;
+    text-align: left;
+    font-family: "JosefinSans-Bold", sans-serif;
+    font-size: 16px;
+    line-height: 130%;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.exploreaz-articole-cu-sfaturi-legate-de-fitness-antrenamente-nutri-ie-sportiv {
+    color: #71665a;
+    text-align: center;
+    font-family: "Questrial-Regular", sans-serif;
+    font-size: 16px;
+    line-height: 130%;
+    font-weight: 400;
+    position: relative;
+    width: 306px;
+}
+
+.descoper-via-activ {
+    color: #000000;
+    text-align: left;
+    font-family: "JosefinSans-Medium", sans-serif;
+    font-size: 13px;
+    line-height: 130%;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: underline;
+    position: relative;
+}
+
+.arrow-right-svgrepo-com-1-13 {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    position: relative;
+}
 
 .about-rodica-section {
-  position: relative;
-  top: 100px;
-  width: 1192px;
-  margin: 0 auto;
+    position: relative;
+    top: 100px;
+    width: 1192px;
+    margin: 0 auto;
 }
+
 .line-10 {
-  border-style: solid;
-  border-color: #ded8d1;
-  border-width: 1px 0 0 0;
-  position: relative;
-  transform: rotate(0deg) scale(1, 1);
-  width: 100%;
-  margin: 40px 0;
+    border-style: solid;
+    border-color: #ded8d1;
+    border-width: 1px 0 0 0;
+    position: relative;
+    transform: rotate(0deg) scale(1, 1);
+    width: 100%;
+    margin: 40px 0;
 }
+
 .frame-62 {
-  display: flex;
-  align-items: center;
-  position: relative;
-  width: 1192px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 1192px;
 }
+
 .frame-63 {
-  display: flex;
-  gap: 40px;
-  align-items: center;
-  position: relative;
-  width: 1000px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    position: relative;
+    width: 1000px;
 }
+
 .frame-61 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin: 0 auto;
-  justify-content:  center;
-  width: 847px;
-  position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+    width: 847px;
+    position: relative;
 }
+
 .frame-52 {
-  position: relative;
-  overflow: hidden;
+    position: relative;
+    overflow: hidden;
 }
+
 .frame-53 {
-  display: flex;
-  gap: 8px;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  position: relative;
-  left: 40px;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    left: 40px;
 }
+
 .frame-90 {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  align-items: flex-start;
-  justify-content: center;
-  flex-shrink: 0;
-  position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
 }
+
 .frame-64 {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  align-items: flex-start;
-  justify-content: center;
-  flex-shrink: 0;
-  position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
 }
+
 .p-rezentare {
-  color: var(--accent, #b6946e);
-  text-align: left;
-  font-family: "JosefinSans-Bold", sans-serif;
-  font-size: 13px;
-  line-height: 130%;
-  font-weight: 700;
-  text-transform: uppercase;
-  position: relative;
+    color: var(--accent, #b6946e);
+    text-align: left;
+    font-family: "JosefinSans-Bold", sans-serif;
+    font-size: 13px;
+    line-height: 130%;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
 }
+
 .hey-eu-sunt-rodica {
-  color: var(--title, #1d1001);
-  text-align: left;
-  font-family: "JosefinSans-Bold", sans-serif;
-  font-size: 32px;
-  line-height: 130%;
-  font-weight: 700;
-  position: relative;
+    color: var(--title, #1d1001);
+    text-align: left;
+    font-family: "JosefinSans-Bold", sans-serif;
+    font-size: 32px;
+    line-height: 130%;
+    font-weight: 700;
+    position: relative;
 }
+
 .lorem-ipsum-dolor-sit-amet-consectetur-ac-purus-sed-habitant-amet-pellentesque-gravida-urna-eget-eget-a-orci-dignissim-enim-enim-amet-turpis-cursus-faucibus-dui-ut-sodales-dui-risus-bibendum-sagittis-amet-nisl-ornare-neque-pharetra-phasellus-nibh-eu-sollicitudin-tristique-ultrices-ultricies-egestas-amet-magna-morbi-auctor-faucibus-amet {
-  color: #71665a;
-  text-align: left;
-  font-family: "Questrial-Regular", sans-serif;
-  font-size: 16px;
-  line-height: 150%;
-  font-weight: 400;
-  position: relative;
-  width: 382px;
+    color: #71665a;
+    text-align: left;
+    font-family: "Questrial-Regular", sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 400;
+    position: relative;
+    width: 382px;
 }
+
 .frame-512 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  flex-shrink: 0;
-  position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
 }
+
 .frame-56 {
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
 }
+
 .frame-55 {
-  display: flex;
-  flex-direction: column;
-  gap: 0px;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
 }
 
 .frame-57 li {
-  list-style: none;
+    list-style: none;
 }
+
 .a-fl-mai-multe-despre-mine {
-  color: #000000;
-  text-align: left;
-  font-family: "JosefinSans-Medium", sans-serif;
-  font-size: 14px;
-  line-height: 130%;
-  font-weight: 500;
-  text-transform: uppercase;
-  text-decoration: underline;
-  position: relative;
+    color: #000000;
+    text-align: left;
+    font-family: "JosefinSans-Medium", sans-serif;
+    font-size: 14px;
+    line-height: 130%;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: underline;
+    position: relative;
 }
+
 .arrow-right-svgrepo-com-1-11 {
-  flex-shrink: 0;
-  width: 24px;
-  height: 24px;
-  position: relative;
-  overflow: visible;
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    overflow: visible;
 }
+
 .line-12 {
-  border-style: solid;
-  border-color: #ded8d1;
-  border-width: 1px 0 0 0;
-  width: 434px;
-  position: relative;
-  transform: rotate(-90deg) scale(1, 1);
+    border-style: solid;
+    border-color: #ded8d1;
+    border-width: 1px 0 0 0;
+    width: 434px;
+    position: relative;
+    transform: rotate(-90deg) scale(1, 1);
 }
+
 .frame-58 {
-  gap: 32px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
+
 .list {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  align-items: center;
-  justify-content: center;
-  width: 200px;
-  text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    text-decoration: none;
 }
 
 .list a {
-  text-decoration: none;
-}
-.link-uri-rapide {
-  color: #71665a;
-  text-align: left;
-  font-family: "JosefinSans-Regular", sans-serif;
-  font-size: 14px;
-  line-height: 130%;
-  font-weight: 400;
-  position: relative;
-}
-.frame-57 {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-.nutri-ie-i-recete {
-  color: #000000;
-  text-align: left;
-  font-family: "JosefinSans-Regular", sans-serif;
-  font-size: 16px;
-  line-height: 130%;
-  font-weight: 400;
-  position: relative;
+    text-decoration: none;
 }
 
+.link-uri-rapide {
+    color: #71665a;
+    text-align: left;
+    font-family: "JosefinSans-Regular", sans-serif;
+    font-size: 14px;
+    line-height: 130%;
+    font-weight: 400;
+    position: relative;
+}
+
+.frame-57 {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.nutri-ie-i-recete {
+    color: #000000;
+    text-align: left;
+    font-family: "JosefinSans-Regular", sans-serif;
+    font-size: 16px;
+    line-height: 130%;
+    font-weight: 400;
+    position: relative;
+}
 
 .frame-40 {
-  display: flex;
-  flex-direction: row;
-  gap: 16px;
-  align-items: center;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
 }
+
 .frame-392 {
-  display: flex;
-  flex-direction: row;
-  gap: 4px;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
 }
+
 .frame {
-  flex-shrink: 0;
-  width: 24px;
-  height: 24px;
-  position: relative;
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    position: relative;
 }
+
 .frame2 {
-  flex-shrink: 0;
-  width: 24px;
-  height: 24px;
-  position: relative;
-  overflow: visible;
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    overflow: visible;
 }
+
 
 /* footer */
 
 .footer {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  align-items: center;
-  justify-content: center;
-  width: 1440px;
-  height: auto;
-  position: relative;
-  top: 150px;
-  background: var(--gradients-white, 
-  linear-gradient(180deg, 
-  rgba(202, 184, 200, 0.85) 0%,
-  rgba(255, 255, 255, 1.00) 120%));
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    width: 1440px;
+    height: auto;
+    position: relative;
+    top: 150px;
+    background: var(--gradients-white, linear-gradient(180deg, rgba(202, 184, 200, 0.85) 0%, rgba(255, 255, 255, 1.00) 120%));
 }
+
 .line-1 {
-  border-style: solid;
-  border-color: #B8A794;
-  border-width: 1px 0 0 0;
-  align-self: stretch;
-  position: relative;
+    border-style: solid;
+    border-color: #B8A794;
+    border-width: 1px 0 0 0;
+    align-self: stretch;
+    position: relative;
 }
+
 .rodica-s-universe {
-  color: #000000;
-  text-align: left;
-  font-family: "JosefinSans-Bold", sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  position: relative;
+    color: #000000;
+    text-align: left;
+    font-family: "JosefinSans-Bold", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    position: relative;
 }
+
 .frame-107 {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  align-items: center;
-  justify-content: center;
-  align-self: stretch;
-  flex-shrink: 0;
-  position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
 }
+
 .frame-105 {
-  display: flex;
-  flex-direction: row;
-  gap: 40px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
 }
+
 .line-81 {
-  border-width: 0px 0px 0px 1px;
-  height: 24px;
-  border-left: 1px solid #d3c5b4;
-  align-self: center;
+    border-width: 0px 0px 0px 1px;
+    height: 24px;
+    border-left: 1px solid #d3c5b4;
+    align-self: center;
 }
 
 .frame-105 li {
-  list-style: none;
+    list-style: none;
 }
+
 .frame-105 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .frame-401 {
-  display: flex;
-  flex-direction: row;
-  gap: 16px;
-  align-items: center;
-  justify-content: center;
-  align-self: stretch;
-  flex-shrink: 0;
-  position: relative;
-}
-.frame-391 {
-  display: flex;
-  flex-direction: row;
-  gap: 4px;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
 }
 
+.frame-391 {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+}
 
 .rodica-s-universe-copyrighted-2024 {
-  color: #b8a794;
-  font-family: "Questrial-Regular", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  position: relative;
-  margin-bottom: 2.4rem;
+    color: #b8a794;
+    font-family: "Questrial-Regular", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+    margin-bottom: 2.4rem;
 }
+
 .frame-402 {
-  display: flex;
-  gap: 16px;
+    display: flex;
+    gap: 16px;
 }
 
-
-
-
-
+.frame-402 {
+    display: flex;
+    gap: 16px;
+}
