@@ -31,3 +31,4 @@ document.getElementById('prevBtn').addEventListener('click', previousSlide);
 function focusInput() {
   document.getElementById('searchInput').focus();
 }
+
