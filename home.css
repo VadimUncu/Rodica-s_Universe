@@ -103,7 +103,7 @@ video {
     width: 24px;
     height: 24px;
     border: 1px solid transparent;
-    background-color: rgba(2, 2, 2, 0.4);
+    background-color: rgba(2, 2, 2, 0.7);
 }
 
 .frame-36 {
@@ -173,9 +173,9 @@ video {
     max-width: 1192px;
     width: 1192px;
     position: relative;
-    margin-bottom: -0.9rem;
-    height: 5rem;
+    height: 4.5rem;
     background-color: #f3eff5;
+    z-index: 1;
 }
 
 .frame-2 {
@@ -293,6 +293,8 @@ video {
     justify-content: center;
     align-items: center;
     position: relative;
+    height: auto;
+    top: -2.5rem;
 }
 
 .carousel {

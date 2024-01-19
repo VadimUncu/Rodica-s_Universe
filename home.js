@@ -35,12 +35,15 @@ function focusInput() {
 window.onscroll = function() { myFunction() };
 
 var navbar = document.getElementById("navbar");
+var container = document.querySelector(".container1");
 var sticky = navbar.offsetTop;
 
 function myFunction() {
     if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
+        navbar.classList.add("sticky");
+        container.style.marginTop = navbar.offsetHeight + "px";
     } else {
         navbar.classList.remove("sticky");
+        container.style.marginTop = "0";
     }
 }
