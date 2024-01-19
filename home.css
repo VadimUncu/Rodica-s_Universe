@@ -374,7 +374,7 @@ button {
     padding: 40px 334px 40px 334px;
     position: relative;
     top: 310px;
-    background: var(--gradients-white, linear-gradient(180deg, rgba(202, 184, 200, 0.85) 0%, rgba(255, 255, 255, 1.00) 100%));
+    background: var(--gradients-white, linear-gradient(180deg, rgba(223, 208, 221, 0.85) 0%, rgba(255, 255, 255, 1.00) 100%));
     border-style: solid;
     border-color: var(--white, #a897b3);
 }
@@ -444,6 +444,12 @@ button {
     width: 24px;
     height: 24px;
     position: relative;
+}
+
+.frame-56:hover .arrow-right-svgrepo-com-1-12 {
+    transform: scale(1.2);
+    transform: translate(20%, 0);
+    transition-duration: 0.2s;
 }
 
 .category-page,
@@ -698,7 +704,7 @@ button {
 .about-rodica-section {
     position: relative;
     top: 100px;
-    width: 1192px;
+    max-width: 1192px;
     margin: 0 auto;
 }
 
@@ -711,6 +717,7 @@ button {
     width: 100%;
     margin: 40px 0;
 }
+
 
 .frame-62 {
     display: flex;
@@ -863,7 +870,7 @@ button {
     border-width: 1px 0 0 0;
     width: 434px;
     position: relative;
-    transform: rotate(-90deg) scale(1, 1);
+    transform: rotate(-90deg) scale(4.6, 1);
 }
 
 .frame-58 {
@@ -966,7 +973,9 @@ button {
     height: auto;
     position: relative;
     top: 150px;
-    background: var(--gradients-white, linear-gradient(180deg, rgba(202, 184, 200, 0.85) 0%, rgba(255, 255, 255, 1.00) 120%));
+    background: var(--gradients-white, 
+    linear-gradient(180deg, rgba(228, 216, 226, 0.85) 0%,
+     rgba(255, 255, 255, 1.00) 120%));
 }
 
 .line-1 {
