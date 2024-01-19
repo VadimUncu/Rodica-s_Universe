@@ -32,14 +32,29 @@ function focusInput() {
     document.getElementById('searchInput').focus();
 }
 
-window.onscroll = function() { myFunction() };
+var prevScrollpos = window.pageYOffset;
+
+var prevScrollpos = window.pageYOffset;
 
 var navbar = document.getElementById("navbar");
 var container = document.querySelector(".container1");
 var sticky = navbar.offsetTop;
 
 function myFunction() {
-    if (window.pageYOffset >= sticky) {
+    var currentScrollPos = window.pageYOffset;
+
+    if (currentScrollPos > prevScrollpos) {
+        // Scrolling down, hide the navbar
+        navbar.style.top = `-${navbar.offsetHeight}px`;
+    } else {
+        // Scrolling up, show the navbar
+        navbar.style.top = "0";
+    }
+
+    prevScrollpos = currentScrollPos;
+
+    // Sticky functionality
+    if (currentScrollPos >= sticky) {
         navbar.classList.add("sticky");
         container.style.marginTop = navbar.offsetHeight + "px";
     } else {
@@ -47,3 +62,7 @@ function myFunction() {
         container.style.marginTop = "0";
     }
 }
+
+window.onscroll = function() {
+    myFunction();
+};

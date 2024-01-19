@@ -158,11 +158,19 @@ video {
     text-transform: uppercase;
     position: relative;
 }
-
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1440px;
+    background-color: #f3eff5;
+}
 .sticky {
     position: fixed;
     top: 0;
     z-index: 1;
+    transition: all 0.4s;
+    box-shadow: 0 5px 5px -4px #B8A794;
 }
 
 .main-navigation {
@@ -171,7 +179,7 @@ video {
     align-items: center;
     justify-content: space-between;
     max-width: 1192px;
-    width: 1192px;
+    width: 1192px!important;
     position: relative;
     height: 4.5rem;
     background-color: #f3eff5;
@@ -358,7 +366,7 @@ button {
     height: 606px;
     position: relative;
     top: 40px;
-    right: 0.2rem;
+    right: 0.1rem;
 }
 
 .frame-47 {
