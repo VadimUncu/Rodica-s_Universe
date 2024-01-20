@@ -158,13 +158,15 @@ video {
     text-transform: uppercase;
     position: relative;
 }
-#navbar{
+
+#navbar {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 1440px;
     background-color: #f3eff5;
 }
+
 .sticky {
     position: fixed;
     top: 0;
@@ -718,7 +720,6 @@ button {
     margin: 40px 0;
 }
 
-
 .frame-62 {
     display: flex;
     align-items: center;
@@ -959,7 +960,60 @@ button {
     position: relative;
     overflow: visible;
 }
+.align-center {
+    position: relative;
+    max-width: 1440px;
+    top: 6rem;
+    text-align: center;
+}
+.instagram-title {
+    color: var(--title, #1d1001);
+  font-family: "JosefinSans-Bold", sans-serif;
+  font-size: 32px;
+  line-height: 130%;
+  font-weight: 700;
+  left: calc(50% - 131.5px);
+  top: 0px;
+  }
+.instagram_post {
+    display: flex;
+    max-width: 1192px;
+    position: relative;
+  margin: 0 auto;
+  justify-content: space-between;
+  top: 30px;
+  margin-bottom: 30px;
+}
 
+    .content {
+        position: relative;
+        width: 381px;
+  height: 381px;
+    }
+
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.content:hover .overlay {
+    opacity: 1;
+}
 
 /* footer */
 
@@ -973,9 +1027,7 @@ button {
     height: auto;
     position: relative;
     top: 150px;
-    background: var(--gradients-white, 
-    linear-gradient(180deg, rgba(228, 216, 226, 0.85) 0%,
-     rgba(255, 255, 255, 1.00) 120%));
+    background: var(--gradients-white, linear-gradient(180deg, rgba(228, 216, 226, 0.85) 0%, rgba(255, 255, 255, 1.00) 120%));
 }
 
 .line-1 {
