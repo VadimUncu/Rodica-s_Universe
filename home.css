@@ -808,6 +808,7 @@ button {
     align-items: center;
     justify-content: center;
     position: relative;
+    top: 1.8rem;
 }
 
 .list {
