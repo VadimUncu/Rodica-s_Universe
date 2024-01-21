@@ -449,6 +449,7 @@ button {
     transition-duration: 0.2s;
 }
 
+
 .category-page,
 .category-page * {
     box-sizing: border-box;
@@ -627,12 +628,7 @@ button {
 }
 
 
-.arrow-right-svgrepo-com-1-13 {
-    flex-shrink: 0;
-    width: 24px;
-    height: 24px;
-    position: relative;
-}
+
 
 .about-rodica-section {
     position: relative;
@@ -891,10 +887,384 @@ button {
     position: relative;
     overflow: visible;
 }
+
+.bloguri {
+    max-width: 1440px;
+    height: 60.25rem;
+    position: relative;
+    margin: 0 auto;
+    top: 5rem;
+}
+.week-blogs {
+  width: 1192px;
+  height: auto;
+  position: relative;
+  margin: 0 auto;
+}
+.frame-532 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 584px;
+  height: 197px;
+  position: absolute;
+  top: 767px;
+}
+.frame-83 {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-85 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-64 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.o-via-fericit {
+  color: var(--accent, #b6946e);
+  text-align: left;
+  font-family: "Josefin Sans";
+  font-size: 13px;
+  line-height: 130%;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+}
+.frame33 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.n-c-utarea-unei-vie-i-fericite {
+  color: var(--title, #1d1001);
+  text-align: left;
+  font-family: "Josefin Sans";
+  font-size: 24px;
+  line-height: 130%;
+  font-weight: 700;
+  position: relative;
+}
+.frame-84 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.fericirea-este-una-dintre-cele-mai-pre-ioase-c-ut-ri-ale-noastre-o-via-fericit-nu-este-doar-un-vis-ci-o-destina-ie-pe-care-o-putem-atinge-prin-alegeri-n-elepte-rela-ii-s-n-toase-i-cultivarea-momentelor-de-bucurie-este-o-c-l-torie-unic-pentru-fiecare-dintre-noi-plin-de-lec-ii-i-descoperiri {
+  color: #71665a;
+  text-align: left;
+  font-family: Questrial;
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+  height: 72px;
+}
+.frame-82 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+._11-dec-2023 {
+  color: #c4b4a2;
+  text-align: left;
+  font-family: "Josefin Sans";
+  font-size: 13px;
+  line-height: 130%;
+  font-weight: 700;
+  position: relative;
+}
+
+
+.cite-te {
+  color: #000000;
+  text-align: left;
+  font-family: "JosefinSans-Medium", sans-serif;
+  font-size: 14px;
+  line-height: 130%;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: underline;
+  position: relative;
+}
+
+.frame-822 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 584px;
+  position: absolute;
+  left: 608px;
+  top: 378px;
+}
+.frame-832 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-852 {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.rela-ile-de-bine {
+  color: var(--accent, #b6946e);
+  text-align: left;
+  font-family: "Josefin Sans";
+  font-size: 13px;
+  line-height: 130%;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+}
+.un-drum-c-tre-fericire {
+  color: var(--title, #1d1001);
+  text-align: left;
+  font-family: "Josefin Sans";
+  font-size: 18px;
+  line-height: 130%;
+  font-weight: 700;
+  position: relative;
+}
+.frame-86 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-end;
+  justify-content: flex-end;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.rela-iile-noastre-cu-ceilal-i-sunt-un-aspect-esen-ial-al-vie-ii-noastre-i-pot-aduce-o-mare-fericire-i-mplinire-n-via-a-noastr-n-acest-articol-explor-m-secretele-de-a-construi-i-men-ine-rela-ii-s-n-toase-i-pline-de-armonie {
+  color: #71665a;
+  text-align: left;
+  font-family: Questrial;
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+  height: 45px;
+}
+.frame-562 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+
+.frame-872 {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 280px;
+  position: absolute;
+  left: 608px;
+  top: 846px;
+}
+.picnic {
+  color: var(--accent, #b6946e);
+  text-align: left;
+  font-family: "Josefin Sans";
+  font-size: 13px;
+  line-height: 130%;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+}
+.frame2 {
+  opacity: 0;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.un-picnic-perfect {
+  color: var(--title, #1d1001);
+  text-align: left;
+  font-family: "Josefin Sans";
+  font-size: 18px;
+  line-height: 130%;
+  font-weight: 700;
+  position: relative;
+}
+.picnicurile-reprezint-o-oaz-de-bucurie-i-relaxare-n-mijlocul-naturii-unde-soarele-str-luce-te-iar-m-ncarea-savuroas-adun-prietenii-i-familia {
+  color: #71665a;
+  text-align: left;
+  font-family: Questrial;
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.frame-89 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.blog-urile-s-pt-m-nei {
+  color: var(--title, #1d1001);
+  text-align: left;
+  font-family: "Josefin Sans";
+  font-size: 32px;
+  line-height: 130%;
+  font-weight: 700;
+  position: absolute;
+  left: 439px;
+  top: 0px;
+}
+.frame-77 {
+  width: 584px;
+  height: 657px;
+  position: absolute;
+  left: 0px;
+  top: 82px;
+  overflow: hidden;
+  object-fit: cover;
+}
+.frame-78 {
+  width: 585px;
+  height: 280px;
+  position: absolute;
+  left: 608px;
+  top: 82px;
+  overflow: hidden;
+  object-fit: cover;
+}
+.frame-833 {
+  width: 280px;
+  height: 280px;
+  position: absolute;
+  left: 608px;
+  top: 550px;
+  overflow: hidden;
+  object-fit: cover;
+}
+.frame-101 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  left: 912px;
+  top: 550px;
+}
+.frame-842 {
+  flex-shrink: 0;
+  width: 280px;
+  height: 280px;
+  position: relative;
+  overflow: hidden;
+  object-fit: cover;
+}
+.frame-88 {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-shrink: 0;
+  width: 280px;
+  position: relative;
+}
+.cafea-de-dimine {
+  color: #b6946e;
+  text-align: left;
+  font-family: "Josefin Sans";
+  font-size: 13px;
+  line-height: 130%;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+}
+.frame3 {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.o-cafea-aromeaz {
+  color: var(--title, #1d1001);
+  text-align: left;
+  font-family: "Josefin Sans";
+  font-size: 18px;
+  line-height: 130%;
+  font-weight: 700;
+  position: relative;
+}
+.dintre-ritualurile-dimine-ii-nu-exist-nimic-mai-reconfortant-dec-t-acel-moment-special-n-care-ntinzi-m-na-c-tre-cea-ca-de-cafea-aburind {
+  color: #71665a;
+  text-align: left;
+  font-family: Questrial;
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+
+
 .align-center {
     position: relative;
     max-width: 1440px;
-    top: 4rem;
+    top: 9rem;
     text-align: center;
     margin: 0 auto;
 }
@@ -979,7 +1349,7 @@ font-weight: 700;
     width: 1440px;
     height: auto;
     position: relative;
-    top: 7.5rem;
+    top: 14rem;
     background: var(--gradients-white, linear-gradient(180deg, rgba(228, 216, 226, 0.85) 0%, rgba(255, 255, 255, 1.00) 120%));
 }
 
