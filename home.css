@@ -1,14 +1,11 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 
 .container {
@@ -41,14 +38,13 @@ body {
     gap: 32px;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0;
     position: relative;
     max-width: 1440px;
     width: 1440px;
 }
 
 video {
-    width: 100%;
+    width: 100% !important;
     height: 6.9rem;
     position: absolute;
     object-fit: cover;
@@ -151,7 +147,7 @@ video {
 .aboneaz-te {
     color: #ece8e3;
     text-align: left;
-    font-family: "Questrial-Regular", sans-serif;
+    font-family: Questrial;
     font-size: 16px;
     line-height: 130%;
     font-weight: 400;
@@ -228,8 +224,8 @@ video {
 .contacte {
     color: #1d1001;
     text-align: left;
-    font-family: "Questrial-Regular", sans-serif;
-    font-size: 16px;
+    font-family: Questrial;
+    font-size: 1rem;
     font-weight: 400;
     text-transform: uppercase;
     position: relative;
@@ -250,13 +246,14 @@ video {
     width: 40px;
     border-style: none;
     padding: 10px;
-    font-size: 18px;
-    letter-spacing: 2px;
+    font-size: 15px;
+    letter-spacing: 1px;
     outline: none;
     transition: all .5s ease-in-out;
     background-color: transparent;
     padding-right: 40px;
     color: #1D1001;
+    font-family: Questrial;
 }
 
 .input-search::placeholder {
@@ -264,6 +261,7 @@ video {
     font-size: 18px;
     letter-spacing: 2px;
     font-weight: 100;
+    font-family: Questrial;
 }
 
 .btn-search {
@@ -400,7 +398,7 @@ button {
 .despre-via {
     color: var(--accent, #b6946e);
     text-align: left;
-    font-family: "JosefinSans-Bold", sans-serif;
+    font-family: "Josefin Sans";
     font-size: 13px;
     line-height: 130%;
     font-weight: 700;
@@ -411,7 +409,7 @@ button {
 .tr-ie-te-i-via-a-pe-deplin {
     color: var(--title, #1d1001);
     text-align: left;
-    font-family: "JosefinSans-Bold", sans-serif;
+    font-family: "Josefin Sans";
     font-size: 40px;
     line-height: 130%;
     font-weight: 700;
@@ -421,7 +419,7 @@ button {
 .tr-ie-te-i-via-a-cu-pasiune-i-autenticitate-fiecare-zi-reprezint-o-oportunitate-de-a-descoperi-de-a-nv-a-i-de-a-experimenta-nu-am-na-fericirea-pentru-mai-t-rziu {
     color: #71665a;
     text-align: center;
-    font-family: "Questrial-Regular", sans-serif;
+    font-family: Questrial;
     font-size: 16px;
     line-height: 130%;
     font-weight: 400;
@@ -432,7 +430,7 @@ button {
 .cite-te-acest-articol {
     color: #000000;
     text-align: left;
-    font-family: "JosefinSans-Medium", sans-serif;
+    font-family: "Josefin Sans";
     font-size: 14px;
     line-height: 130%;
     font-weight: 500;
@@ -441,12 +439,6 @@ button {
     position: relative;
 }
 
-.arrow-right-svgrepo-com-1-12 {
-    flex-shrink: 0;
-    width: 24px;
-    height: 24px;
-    position: relative;
-}
 
 .frame-56:hover .arrow-right-svgrepo-com-1-12 {
     transform: scale(1.2);
@@ -465,13 +457,13 @@ button {
     gap: 40px;
     align-items: center;
     position: relative;
-    top: 80px;
+    top: 4rem;
 }
 
 .blog-uri-pe-categorii {
     color: var(--title, #1d1001);
     text-align: left;
-    font-family: "JosefinSans-Bold", sans-serif;
+    font-family: "Josefin Sans";
     font-size: 32px;
     line-height: 130%;
     font-weight: 700;
@@ -547,10 +539,10 @@ button {
     position: relative;
 }
 
-.nutri-ie {
+.text1 {
     color: #b68349;
     text-align: left;
-    font-family: "JosefinSans-Bold", sans-serif;
+    font-family: "Josefin Sans";
     font-size: 16px;
     line-height: 130%;
     font-weight: 700;
@@ -558,10 +550,10 @@ button {
     position: relative;
 }
 
-.exploreaz-bogata-colec-ie-de-articole-din-categoria-nutri-ie {
+.text2 {
     color: #71665a;
     text-align: center;
-    font-family: "Questrial-Regular", sans-serif;
+    font-family: Questrial;
     font-size: 16px;
     line-height: 130%;
     font-weight: 400;
@@ -569,10 +561,10 @@ button {
     width: 306px;
 }
 
-.descoper-nutri-ia {
+.text3 {
     color: #000000;
     text-align: left;
-    font-family: "JosefinSans-Medium", sans-serif;
+    font-family: "Josefin Sans";
     font-size: 13px;
     line-height: 130%;
     font-weight: 500;
@@ -601,41 +593,10 @@ button {
     position: relative;
 }
 
-.s-n-tatea-mental {
-    color: #b68349;
-    text-align: left;
-    font-family: "JosefinSans-Bold", sans-serif;
-    font-size: 16px;
-    line-height: 130%;
-    font-weight: 700;
-    text-transform: uppercase;
-    position: relative;
-}
 
-.exploreaz-articole-menite-s-sprijine-bun-starea-ta-emo-ional-i-psihologic {
-    color: #71665a;
-    text-align: center;
-    font-family: "Questrial-Regular", sans-serif;
-    font-size: 16px;
-    line-height: 130%;
-    font-weight: 400;
-    position: relative;
-    width: 306px;
-}
-
-.descoper-s-n-tate-mintal {
-    color: #000000;
-    text-align: left;
-    font-family: "JosefinSans-Medium", sans-serif;
-    font-size: 13px;
-    line-height: 130%;
-    font-weight: 500;
-    text-transform: uppercase;
-    text-decoration: underline;
-    position: relative;
-}
 
 .arrow-right-svgrepo-com-1-12 {
+    top: -2px;
     flex-shrink: 0;
     width: 24px;
     height: 24px;
@@ -662,39 +623,6 @@ button {
     position: relative;
 }
 
-.via-a-activ {
-    color: #b68349;
-    text-align: left;
-    font-family: "JosefinSans-Bold", sans-serif;
-    font-size: 16px;
-    line-height: 130%;
-    font-weight: 700;
-    text-transform: uppercase;
-    position: relative;
-}
-
-.exploreaz-articole-cu-sfaturi-legate-de-fitness-antrenamente-nutri-ie-sportiv {
-    color: #71665a;
-    text-align: center;
-    font-family: "Questrial-Regular", sans-serif;
-    font-size: 16px;
-    line-height: 130%;
-    font-weight: 400;
-    position: relative;
-    width: 306px;
-}
-
-.descoper-via-activ {
-    color: #000000;
-    text-align: left;
-    font-family: "JosefinSans-Medium", sans-serif;
-    font-size: 13px;
-    line-height: 130%;
-    font-weight: 500;
-    text-transform: uppercase;
-    text-decoration: underline;
-    position: relative;
-}
 
 .arrow-right-svgrepo-com-1-13 {
     flex-shrink: 0;
@@ -705,7 +633,7 @@ button {
 
 .about-rodica-section {
     position: relative;
-    top: 100px;
+    top: 4rem;
     max-width: 1192px;
     margin: 0 auto;
 }
@@ -783,7 +711,7 @@ button {
 .p-rezentare {
     color: var(--accent, #b6946e);
     text-align: left;
-    font-family: "JosefinSans-Bold", sans-serif;
+    font-family: "Josefin Sans";
     font-size: 13px;
     line-height: 130%;
     font-weight: 700;
@@ -794,7 +722,7 @@ button {
 .hey-eu-sunt-rodica {
     color: var(--title, #1d1001);
     text-align: left;
-    font-family: "JosefinSans-Bold", sans-serif;
+    font-family: "Josefin Sans";
     font-size: 32px;
     line-height: 130%;
     font-weight: 700;
@@ -804,7 +732,7 @@ button {
 .lorem-ipsum-dolor-sit-amet-consectetur-ac-purus-sed-habitant-amet-pellentesque-gravida-urna-eget-eget-a-orci-dignissim-enim-enim-amet-turpis-cursus-faucibus-dui-ut-sodales-dui-risus-bibendum-sagittis-amet-nisl-ornare-neque-pharetra-phasellus-nibh-eu-sollicitudin-tristique-ultrices-ultricies-egestas-amet-magna-morbi-auctor-faucibus-amet {
     color: #71665a;
     text-align: left;
-    font-family: "Questrial-Regular", sans-serif;
+    font-family: Questrial;
     font-size: 16px;
     line-height: 150%;
     font-weight: 400;
@@ -848,7 +776,7 @@ button {
 .a-fl-mai-multe-despre-mine {
     color: #000000;
     text-align: left;
-    font-family: "JosefinSans-Medium", sans-serif;
+    font-family: "Josefin Sans";
     font-size: 14px;
     line-height: 130%;
     font-weight: 500;
@@ -900,7 +828,7 @@ button {
 .link-uri-rapide {
     color: #71665a;
     text-align: left;
-    font-family: "JosefinSans-Regular", sans-serif;
+    font-family: "Josefin Sans";
     font-size: 14px;
     line-height: 130%;
     font-weight: 400;
@@ -916,14 +844,14 @@ button {
     position: relative;
 }
 
-.nutri-ie-i-recete {
+.category-list {
     color: #000000;
     text-align: left;
-    font-family: "JosefinSans-Regular", sans-serif;
     font-size: 16px;
     line-height: 130%;
     font-weight: 400;
     position: relative;
+    font-family: "Josefin Sans";
 }
 
 .frame-40 {
@@ -963,12 +891,13 @@ button {
 .align-center {
     position: relative;
     max-width: 1440px;
-    top: 6rem;
+    top: 4rem;
     text-align: center;
+    margin: 0 auto;
 }
 .instagram-title {
     color: var(--title, #1d1001);
-  font-family: "JosefinSans-Bold", sans-serif;
+    font-family: "Josefin Sans";
   font-size: 32px;
   line-height: 130%;
   font-weight: 700;
@@ -977,11 +906,13 @@ button {
   }
 .instagram_post {
     display: flex;
+    flex-wrap: wrap;
     max-width: 1192px;
     position: relative;
   margin: 0 auto;
-  justify-content: space-between;
+  justify-content: space-around;
   top: 30px;
+  gap: 1.5rem;
   margin-bottom: 30px;
 }
 
@@ -993,27 +924,46 @@ button {
 
 
 .image {
-    display: block;
-    width: 100%;
-    height: auto;
+    width: 23.8rem;
+height: 23.8rem;
 }
-
+.new-icon {
+    position: absolute;
+    width: 40px;
+height: 40px;
+top: 1.5rem;
+right: 1.5rem;
+opacity: 0;
+transition: .5s ease;
+}
 .overlay {
     position: absolute;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    color: #f1f1f1;
-    width: 100%;
+    background: rgb(255, 255, 255);
+    width: 23.8rem;
+height: 4.5rem;
+padding-top: 1.5rem;
     transition: .5s ease;
     opacity: 0;
-    font-size: 20px;
-    padding: 20px;
+    margin: 0 auto;
     text-align: center;
+    color: var(--Title, #1D1001);
+font-family: "Josefin Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+}
+.frame11 {
+    width: 22px;
+    height: 22px;
+    position: relative;
+    top: 0.3rem;
 }
 
-.content:hover .overlay {
+.content:hover .overlay, .content:hover .new-icon {
     opacity: 1;
 }
+
 
 /* footer */
 
@@ -1026,7 +976,7 @@ button {
     width: 1440px;
     height: auto;
     position: relative;
-    top: 150px;
+    top: 7.5rem;
     background: var(--gradients-white, linear-gradient(180deg, rgba(228, 216, 226, 0.85) 0%, rgba(255, 255, 255, 1.00) 120%));
 }
 
@@ -1041,7 +991,7 @@ button {
 .rodica-s-universe {
     color: #000000;
     text-align: left;
-    font-family: "JosefinSans-Bold", sans-serif;
+    font-family: "Josefin Sans";
     font-size: 24px;
     font-weight: 700;
     position: relative;
@@ -1106,7 +1056,7 @@ button {
 
 .rodica-s-universe-copyrighted-2024 {
     color: #b8a794;
-    font-family: "Questrial-Regular", sans-serif;
+    font-family: Questrial;
     font-size: 14px;
     font-weight: 400;
     position: relative;

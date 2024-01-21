@@ -28,6 +28,27 @@ showSlide(currentIndex);
 document.getElementById('nextBtn').addEventListener('click', nextSlide);
 document.getElementById('prevBtn').addEventListener('click', previousSlide);
 
+// Touch event handling for swipe gestures
+let touchStartX;
+
+document.addEventListener('touchstart', (e) => {
+    touchStartX = e.touches[0].clientX;
+});
+
+document.addEventListener('touchend', (e) => {
+    const touchEndX = e.changedTouches[0].clientX;
+    const deltaX = touchEndX - touchStartX;
+
+    // Adjust the threshold as needed
+    if (deltaX > 50) {
+        // Swipe right
+        previousSlide();
+    } else if (deltaX < -50) {
+        // Swipe left
+        nextSlide();
+    }
+});
+
 function focusInput() {
     document.getElementById('searchInput').focus();
 }
