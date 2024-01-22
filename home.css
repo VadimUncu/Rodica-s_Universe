@@ -1,3 +1,5 @@
+
+
 * {
     margin: 0;
     padding: 0;
@@ -89,7 +91,6 @@ video {
 }
 
 .frame21:hover {
-    background-color: rgb(236, 220, 235);
     transition: 0.2s;
     border: 1px solid #b6946e;
     opacity: 0.9;
@@ -106,7 +107,6 @@ video {
     width: 24px;
     height: 24px;
     border: 1px solid transparent;
-    background-color: rgba(2, 2, 2, 0.7);
 }
 
 .frame-36 {
@@ -198,7 +198,6 @@ video {
     align-items: center;
     justify-content: flex-start;
     position: relative;
-    font-family: Questrial;
 }
 
 .frame-2 li {
@@ -225,15 +224,12 @@ video {
     padding: 0.5rem;
 }
 
-.acas,
-.blog,
-.despre-mine,
-.contacte {
+.main_list {
     color: #1d1001;
     text-align: left;
-    font-family: Questrial;
+    font-family: "Cinzel", serif;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 600;
     text-transform: uppercase;
     position: relative;
     display: flex;
@@ -416,10 +412,10 @@ button {
 .tr-ie-te-i-via-a-pe-deplin {
     color: var(--title, #1d1001);
     text-align: left;
-    font-family: "Josefin Sans";
+    font-family: "Sansita", sans-serif;
     font-size: 40px;
     line-height: 130%;
-    font-weight: 700;
+    font-weight: 400;
     position: relative;
 }
 
@@ -471,10 +467,10 @@ button {
 .blog-uri-pe-categorii {
     color: var(--title, #1d1001);
     text-align: left;
-    font-family: "Josefin Sans";
+    font-family: "Sansita", sans-serif;
     font-size: 32px;
     line-height: 130%;
-    font-weight: 700;
+    font-weight: 400;
     position: relative;
 }
 
@@ -725,10 +721,10 @@ button {
 .hey-eu-sunt-rodica {
     color: var(--title, #1d1001);
     text-align: left;
-    font-family: "Josefin Sans";
+    font-family: "Sansita", sans-serif;
     font-size: 32px;
     line-height: 130%;
-    font-weight: 700;
+    font-weight: 400;
     position: relative;
 }
 
@@ -812,7 +808,6 @@ button {
     align-items: center;
     justify-content: center;
     position: relative;
-    top: 1.8rem;
 }
 
 .list {
@@ -842,7 +837,6 @@ button {
 .frame-57 {
     display: flex;
     flex-direction: column;
-    gap: 24px;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -866,6 +860,11 @@ button {
     justify-content: flex-start;
     flex-shrink: 0;
     position: relative;
+}
+.frame-402 {
+    display: flex;
+    gap: 16px;
+    margin-top: 2rem;
 }
 
 .frame-392 {
@@ -967,7 +966,7 @@ button {
   font-family: "Josefin Sans";
   font-size: 24px;
   line-height: 130%;
-  font-weight: 700;
+  font-weight: 500;
   position: relative;
 }
 .frame-84 {
@@ -1069,7 +1068,7 @@ button {
   font-family: "Josefin Sans";
   font-size: 18px;
   line-height: 130%;
-  font-weight: 700;
+  font-weight: 500;
   position: relative;
 }
 .frame-86 {
@@ -1125,21 +1124,14 @@ button {
   text-transform: uppercase;
   position: relative;
 }
-.frame2 {
-  opacity: 0;
-  flex-shrink: 0;
-  width: 24px;
-  height: 24px;
-  position: relative;
-  overflow: visible;
-}
+
 .un-picnic-perfect {
   color: var(--title, #1d1001);
   text-align: left;
   font-family: "Josefin Sans";
   font-size: 18px;
   line-height: 130%;
-  font-weight: 700;
+  font-weight: 500;
   position: relative;
 }
 .picnicurile-reprezint-o-oaz-de-bucurie-i-relaxare-n-mijlocul-naturii-unde-soarele-str-luce-te-iar-m-ncarea-savuroas-adun-prietenii-i-familia {
@@ -1165,10 +1157,10 @@ button {
 .blog-urile-s-pt-m-nei {
   color: var(--title, #1d1001);
   text-align: left;
-  font-family: "Josefin Sans";
+  font-family: "Sansita", sans-serif;
   font-size: 32px;
   line-height: 130%;
-  font-weight: 700;
+  font-weight: 400;
   position: absolute;
   left: 439px;
   top: 0px;
@@ -1251,7 +1243,7 @@ button {
   font-family: "Josefin Sans";
   font-size: 18px;
   line-height: 130%;
-  font-weight: 700;
+  font-weight: 500;
   position: relative;
 }
 .dintre-ritualurile-dimine-ii-nu-exist-nimic-mai-reconfortant-dec-t-acel-moment-special-n-care-ntinzi-m-na-c-tre-cea-ca-de-cafea-aburind {
@@ -1275,10 +1267,10 @@ button {
 }
 .instagram-title {
     color: var(--title, #1d1001);
-    font-family: "Josefin Sans";
+    font-family: "Sansita", sans-serif;
   font-size: 32px;
   line-height: 130%;
-  font-weight: 700;
+  font-weight: 400;
   left: calc(50% - 131.5px);
   top: 0px;
   }
@@ -1369,9 +1361,9 @@ font-weight: 700;
 .rodica-s-universe {
     color: #000000;
     text-align: left;
-    font-family: "Josefin Sans";
+    font-family: "Sansita", sans-serif;
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 400;
     position: relative;
 }
 
@@ -1441,12 +1433,5 @@ font-weight: 700;
     margin-bottom: 2.4rem;
 }
 
-.frame-402 {
-    display: flex;
-    gap: 16px;
-}
 
-.frame-402 {
-    display: flex;
-    gap: 16px;
-}
+
