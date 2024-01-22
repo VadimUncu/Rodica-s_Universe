@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -12,7 +13,8 @@ video, img {
 }
 
 .container {
-    width: 1440px;
+    width: 100%;
+    max-width: 1440px;
     margin: 0 auto;
     background-color: #f3eff5;
 }
@@ -47,11 +49,13 @@ video, img {
 }
 
 video {
-    width: 100% !important;
+    width: 100%;
+    max-width: 100%; /* Set a maximum width to control scaling */
     height: 6.9rem;
     position: absolute;
-    object-fit: cover;
     top: 0;
+    left: 0;
+    object-fit: cover;
 }
 
 .frame-41 {
@@ -179,7 +183,7 @@ video {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    max-width: 1192px;
+    max-width: 100%;
     width: 1192px!important;
     position: relative;
     height: 4.5rem;
@@ -245,8 +249,8 @@ video {
 }
 
 .input-search {
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
     border-style: none;
     padding: 10px;
     font-size: 15px;
