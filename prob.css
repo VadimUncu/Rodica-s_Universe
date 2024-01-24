@@ -1,15 +1,16 @@
 
 .all {
-    width: 1440px;
+    max-width: 1440px;
+    width: 100%;
     margin: 0 auto;
     background-color: antiquewhite;
     text-align: center;
     position: relative;
-    top: 0;
 }
 
 .container {  
     max-width: 1192px;
+    width: 100%;
     height: auto;
     margin: 0 auto;
     position: relative;
@@ -177,8 +178,33 @@ line-height: 150%; }
     width: 17.5rem;
 height: 17.5rem;
 }
-  
 
   
+
+
+
+@media (max-width: 1250px) {
+  .all {
+      max-width: 100%;
+  }
+
+  .container {
+      width: 90%;
+  }
+
+  .photo,
+  .photo1,
+  .aphoto {
+      width: 100%;
+      height: auto;
+      margin: 1rem 0;
+  }
+
+  .content {
+      grid-template-areas:
+          "section1"
+          "section2";
+  }
+}
 
   
