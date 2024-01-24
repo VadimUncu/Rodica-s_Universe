@@ -1,14 +1,4 @@
-
-.all {
-    max-width: 1440px;
-    width: 100%;
-    margin: 0 auto;
-    background-color: antiquewhite;
-    text-align: center;
-    position: relative;
-}
-
-.container {  
+.container11 {  
     max-width: 1192px;
     width: 100%;
     height: auto;
@@ -24,7 +14,7 @@ font-style: normal;
 font-weight: 700;
 line-height: 130%; /* 2.6rem */
   }
-  .content {  
+  .content11 {  
     display: grid;
     gap: 1.5rem;
     grid-template-areas:
@@ -38,17 +28,17 @@ line-height: 130%; /* 2.6rem */
     grid-auto-flow: row;
     grid-template-areas:
       "photo"
-      "text"
-      "text1"
-      "text2"
-      "text3";
+      "text01"
+      "text02"
+      "text03"
+      "text04";
   }
   
   .photo { grid-area: photo;
     width: 36.5rem;
     height: 41.0625rem; }
   
-  .text {  display: flex;
+  .text01 {  display: flex;
     color: var(--Accent, #B6946E);
 font-family: "Josefin Sans";
 font-size: 0.8125rem;
@@ -64,22 +54,22 @@ align-items: center;
     width: 1.5rem;
     height: 1.5rem;}
   
-  .text1 { color: var(--Title, #1D1001);
+  .text02 { color: var(--Title, #1D1001);
     font-family: "Josefin Sans";
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 700;
     line-height: 130%; /* 1.95rem */ }
   
-  .text2 {  
-color: #71665A;
+  .text03 {  
+color: #030303;
 font-family: Questrial;
 font-size: 1rem;
 font-style: normal;
 font-weight: 400;
 line-height: 150%; /* 1.5rem */
   }
-  .all a {
+  .content11 a {
     text-decoration: none;
     color: #000;
 font-family: "Josefin Sans";
@@ -91,7 +81,7 @@ text-decoration-line: underline;
 text-transform: uppercase;
   }
   
-  .text3 {  
+  .text04 {  
     display: flex;
 justify-content: space-between;
 align-items: center;
@@ -135,7 +125,7 @@ height: 1.5rem;
 height: 17.5rem;
   }
   
-  .text11 { 
+  .text011 { 
     color: var(--Accent, #B6946E);
 font-family: "Josefin Sans";
 font-size: 0.8125rem;
@@ -145,7 +135,7 @@ line-height: 130%; /* 1.05625rem */
 text-transform: uppercase;
    }
   
-  .text111 { 
+  .text012 { 
     color: var(--Title, #1D1001);
 font-family: "Josefin Sans";
 font-size: 1.125rem;
@@ -154,7 +144,7 @@ font-weight: 700;
 line-height: 130%; /* 1.4625rem */
    }
   
-  .text12 { 
+  .text013 { 
 color: #71665A;
 font-family: Questrial;
 font-size: 0.875rem;
@@ -184,12 +174,10 @@ height: 17.5rem;
 
 
 @media (max-width: 1250px) {
-  .all {
-      max-width: 100%;
-  }
 
-  .container {
-      width: 90%;
+
+  .container11 {
+      width: 80%;
   }
 
   .photo,
@@ -200,11 +188,23 @@ height: 17.5rem;
       margin: 1rem 0;
   }
 
-  .content {
-      grid-template-areas:
-          "section1"
-          "section2";
+  .content11 {
+    display: flex;
+    flex-wrap: wrap;
   }
+ 
 }
+
+
+@media (max-width: 768px) {
+  
+  .info2 {
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+}
+
+
 
   
