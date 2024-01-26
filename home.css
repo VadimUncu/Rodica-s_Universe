@@ -21,7 +21,7 @@ video, img {
     background-color: #f3eff5;
 }
 
-.navigation a {
+.container a {
     text-decoration: none;
     cursor: pointer;
 }
@@ -56,36 +56,26 @@ video, img {
 
   
   .item-right {
-    border-style: solid;
-    border-color: #b6946e;
-    border-width: 1px;
-    padding: 12px 31px;
-    width: 179px;
+    border-bottom: 1px solid transparent;  /* Border only at the bottom */
+    padding: 10px 20px;
+    width: 150px;
     text-align: center;
-  
-  }
+    transition: all 0.2s;
+    position: relative;
+}
   .social-icons {
     display: flex;
     gap: 0.5rem;
   }
   .aboneaza-te {
-    color: #ece8e3;
+    color: #b6946e;
       font-family: Questrial;
       font-size: 16px;
-      line-height: 130%;
       font-weight: 400;
       text-transform: uppercase;
   }
   
-  .item-right:hover {
-    background-color: rgb(236, 220, 235, 0.8);
-    transition: 0.2s;
-  }
-  
-  .item-right:hover div {
-    color: #1d1001;
-    transition: 0.2s;
-  }
+
   .social-media img {
     width: 26px;
     height: 26px;
@@ -112,20 +102,22 @@ video, img {
 
 .sticky {
     position: fixed;
+    max-width: 1194px;
+    margin: 0 auto;  /* Center horizontally */
+    left: 0;
+    right: 0;
     top: 0;
     z-index: 1;
     transition: all 0.4s;
     box-shadow: 0 5px 5px -4px #B8A794;
 }
 
+
 .main-navigation {
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1192px;
+    width: 1192px;
     position: relative;
     height: 4.5rem;
     background-color: #f3eff5;
@@ -143,8 +135,7 @@ video, img {
 .navigation-list li {
     list-style: none;
 }
-
-.hover::after {
+.hover::after, .item-right::after {
     content: '';
     position: absolute;
     width: 0px;
@@ -155,7 +146,7 @@ video, img {
     transition: all ease-in-out .2s;
 }
 
-.hover:hover::after {
+.hover:hover::after, .item-right:hover::after {
     width: 100%;
     left: 0;
 }
@@ -241,6 +232,98 @@ video, img {
     width: 26px;
     height: 26px;
 }
+
+.menu-toggle {
+    display: none; /* Initially hide the hamburger menu */
+    cursor: pointer;
+    font-size: 24px; /* Adjust the font size as needed */
+    color: #1d1001; /* Adjust the color as needed */
+}
+
+/* Media query for screens with a width of 768px or less */
+@media only screen and (max-width: 750px) {
+
+      #burger-menu {
+        cursor: pointer;
+        height: 27px;
+        width: 27px;
+        margin: 1.5rem;
+        overflow: visible;
+        position: relative;
+        z-index:2;
+        z-index: 3;
+      }
+      #burger-menu span,
+      #burger-menu span:before,
+      #burger-menu span:after {
+        background: #B6946E;
+        display: block;
+        height: 4px;
+        opacity: 1;
+        position: absolute;
+        transition: 0.3s ease-in-out;
+      }
+      #burger-menu span:before,
+      #burger-menu span:after {
+        content: "";
+      }
+      #burger-menu span {
+        right: 0px;
+        top: 13px;
+        width: 27px;
+      }
+      #burger-menu span:before {
+        left: 0px;
+        top: -10px;
+        width: 16px;
+      }
+      #burger-menu span:after {
+        left: 0px;
+        top: 10px;
+        width: 20px;
+      }
+      
+      #burger-menu.close span {
+        transform: rotate(-45deg);
+        width: 27px;
+      }
+      #burger-menu.close span:before {
+        top: 0px;
+        transform: rotate(90deg);
+        width: 27px;
+      }
+      #burger-menu.close span:after {
+        top: 0px;
+        left:0;
+        transform: rotate(90deg);
+        opacity:0;
+        width:0;
+      }
+      
+      #menu{
+        z-index:1;
+        min-width:100%;
+        min-height:100%;
+        position: fixed;
+        top:0;
+        height:0;
+        visibility: hidden;
+        opacity: 0;
+        text-align:center;
+        padding-top:20px;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      #menu.overlay{
+        visibility: visible;
+        opacity: 1;
+        padding-top:10rem;
+        background-color: rgba(243, 239, 245, 0.9);
+      }
+      
+}
+
+   
 
 .container1 {
     display: flex;
@@ -398,10 +481,6 @@ button {
 }
 
 
-.category-page,
-.category-page * {
-    box-sizing: border-box;
-}
 
 .category-page {
     display: flex;
@@ -410,6 +489,7 @@ button {
     align-items: center;
     position: relative;
     top: 4rem;
+    width: 100%;
 }
 
 .blog-uri-pe-categorii {
@@ -1131,14 +1211,25 @@ font-weight: 700;
 .footer {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
     align-items: center;
     justify-content: center;
-    width: 1440px;
+    max-width: 1440px;
     height: auto;
     position: relative;
     top: 14rem;
     background: var(--gradients-white, linear-gradient(180deg, rgba(228, 216, 226, 0.85) 0%, rgba(255, 255, 255, 1.00) 120%));
+}
+.navigation-list {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    align-items: center;
+    position: relative;
+}
+
+.navigation-list li {
+    list-style: none;
 }
 
 .line-1 {
@@ -1149,77 +1240,29 @@ font-weight: 700;
     position: relative;
 }
 
-.rodica-s-universe {
-    color: #000000;
-    text-align: left;
-    font-family: "Sansita", sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    position: relative;
-}
-
-.frame-107 {
+.footer-items {
     display: flex;
     flex-direction: column;
     gap: 24px;
     align-items: center;
     justify-content: center;
-    align-self: stretch;
-    flex-shrink: 0;
     position: relative;
 }
 
-.frame-105 {
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-shrink: 0;
-    position: relative;
-}
 
-.line-81 {
-    border-width: 0px 0px 0px 1px;
-    height: 24px;
-    border-left: 1px solid #d3c5b4;
-    align-self: center;
-}
-
-.frame-105 li {
-    list-style: none;
-}
-
-.frame-105 a {
-    text-decoration: none;
-}
-
-.frame-401 {
-    display: flex;
-    flex-direction: row;
-    gap: 16px;
-    align-items: center;
-    justify-content: center;
-    align-self: stretch;
-    flex-shrink: 0;
-    position: relative;
-}
-
-.frame-391 {
-    display: flex;
-    flex-direction: row;
-    gap: 4px;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    position: relative;
-}
-
-.rodica-s-universe-copyrighted-2024 {
+.rodica-copyrighted {
     color: #b8a794;
     font-family: Questrial;
     font-size: 14px;
     font-weight: 400;
     position: relative;
-    margin-bottom: 2.4rem;
+    margin-bottom: 1.2rem;
 }
+@media (max-width: 768px) {
+    .navigation-list {
+      display: flex;
+      flex-direction: column ; /* Assuming you want to stack items vertically */
+      align-items: center;
+      gap: 1rem;
+    }
+  }
