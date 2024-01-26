@@ -258,7 +258,7 @@ video, img {
       #burger-menu span:after {
         background: #B6946E;
         display: block;
-        height: 4px;
+        height: 2px;
         opacity: 1;
         position: absolute;
         transition: 0.3s ease-in-out;
