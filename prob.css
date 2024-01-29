@@ -1,78 +1,13 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-.main-banner {
-max-width: 1440px;
-margin: 0 auto;
-}
 
-.banner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1192px;
-  margin: 0 auto;
-  position: relative;
-  padding: 0 1rem;
-}
-
-video {
-  width: 100%; /* Set video width to 100% for responsiveness */
-  position: absolute;
-  max-width: 1440px;
-  top: 0;
-margin: 0 auto;
-object-fit: inherit;
-height: 137px
-}
-
-.logo {
-  position: relative;
-  margin: 0 auto;
-  width: 8rem;
-  top: -0.5rem;
-}
-
-.banner a {
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.item-right {
-  border-style: solid;
-  border-color: #b6946e;
-  border-width: 1px;
-  padding: 12px 31px;
-  width: 179px;
-  text-align: center;
-
-}
+/* remove on change */
 .social-icons {
   display: flex;
   gap: 0.5rem;
 }
-.aboneaza-te {
-  color: #ece8e3;
-    font-family: Questrial;
-    font-size: 16px;
-    line-height: 130%;
-    font-weight: 400;
-    text-transform: uppercase;
-}
 
-.item-right:hover {
-  background-color: rgb(236, 220, 235, 0.8);
-  transition: 0.2s;
-}
-
-.item-right:hover div {
-  color: #1d1001;
-  transition: 0.2s;
-}
 .social-media img {
-  width: 24px;
-  height: 24px;
+  width: 26px;
+  height: 26px;
   border: 1px solid transparent;
 }
 
@@ -80,9 +15,135 @@ height: 137px
   transition: 0.2s;
   border: 1px solid #b6946e;
 }
+* {
+  margin: 0;
+  padding: 0;
+ }
+ body {
+  width: 100%;
+  height: 100vh;
+ }
+/* remove on change */
+ 
+.rodica {
+width: 24rem;
+height: 27rem;
+}
 
-.line-8 {
+
+.despre-rodica {
+  display: flex;
+  max-width: 1192px;
+  margin: 0 auto;
+  gap: 2.5rem;
+  position: relative;
+  justify-content: center;
+}
+
+.part {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.part1 {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+.links{
+  display: flex;
+flex-direction: column;
+align-items: center;
+gap: 1.5rem;
+list-style: none;
+}
+
+.inside {
+max-width: 24rem;
+display: flex;
+flex-direction: column;
+gap: 1rem;
+}
+
+.links a {
+  text-decoration: none;
+  color: #000;
+font-family: "Josefin Sans";
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+}
+ 
+.part1 span {
+  color: #71665A;
+font-family: "Josefin Sans";
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 400;
+ }
+
+ .inside span {
+  color: var(--Accent, #B6946E);
+font-family: "Josefin Sans";
+font-size: 0.8125rem;
+font-style: normal;
+font-weight: 700;
+ }
+ .link1:hover .arrow-right-svgrepo-com-1-12 {
+  transform: scale(1.2);
+  transform: translate(20%, 0);
+  transition-duration: 0.2s;
+}
+.link1 { 
+  display: flex;
+  align-items: center;
+}
+
+.inside a {
+  color: #000;
+font-family: "Josefin Sans";
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 500;
+}
+.arrow-right-svgrepo-com-1-12 {
+  top: -2px;
+left: 0.2rem;
+  width: 24px;
   height: 24px;
-  border-left: 1px solid #a19280;
-align-self: center;
+  position: relative;
+}
+
+.inside h2 {
+  color: #1D1001;
+font-family: "Josefin Sans";
+font-size: 2rem;
+font-style: normal;
+font-weight: 700;
+}
+
+.inside p {
+  color: #71665A;
+font-family: Questrial;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+}
+
+ .underline {
+  background: linear-gradient(0deg, #B6946E, #B6946E) no-repeat right bottom / 0 var(--bg-h);
+  transition: background-size 350ms;
+  --bg-h: 100%;
+}
+ .underline:where(:hover, :focus-visible) {
+  background-size: 100% var(--bg-h);
+  background-position-x: left;
+}
+
+.underline {
+  padding-bottom: 2px;
+  --bg-h: 1px;
 }
