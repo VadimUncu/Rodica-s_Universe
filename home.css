@@ -68,7 +68,7 @@ video, img {
     gap: 0.5rem;
   }
   .aboneaza-te {
-    color: #b6946e;
+    color: #dbac78;
       font-family: Questrial;
       font-size: 16px;
       font-weight: 400;
@@ -241,7 +241,7 @@ video, img {
 }
 
 /* Media query for screens with a width of 768px or less */
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 800px) {
 
       #burger-menu {
         cursor: pointer;
@@ -474,41 +474,72 @@ button {
     transform: translate(20%, 0);
     transition-duration: 0.2s;
 }
-.link1:hover .arrow-right-svgrepo-com-1-12 {
-    transform: scale(1.2);
-    transform: translate(20%, 0);
-    transition-duration: 0.2s;
-}
+
 
 
 .blog-uri {
   position: relative;
   text-align: center;
-  width: 1192px;
   top: 3rem;
   margin: 3rem auto;
   justify-content: center;
 }
 .blog-wrap {
   display: flex;
+  flex-wrap: wrap;
  justify-content: center;
  margin: 0 auto;
- gap: 1.5rem;
+justify-content: space-between;
+ max-width: 1192px;
+ gap: 1rem;
 }
 
 .blog-img {
-  width: 24rem;
-  height: 26rem;
+  width: 100%;
+  height: auto;
   margin: 0 auto;
 }
 
 .blog-item {
   display: flex;
   flex-direction: column;
+  width: 24rem;
+  height: auto;
   margin: 0 auto;
   justify-content: center;
+  gap: 1rem;
 }
-  
+ 
+.blog-item span {
+  color: #B68349;
+font-family: "Josefin Sans";
+font-size: 1rem;
+font-style: normal;
+font-weight: 700;
+}
+
+.blog-item p {
+color: #71665A;
+font-family: Questrial;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+}
+ 
+.blog-link {
+  text-decoration: none;
+  color: #000;
+  font-family: "Josefin Sans";
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 500;
+  text-decoration-line: underline !important;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+bottom: 0.5rem;
+}
   .rodica {
     width: 24rem;
     height: 27rem;
@@ -590,8 +621,9 @@ button {
     font-weight: 700;
   }
   
-  .link1:hover .arrow-right {
-    transform: scale(1.2) translate(20%, 0);
+  .link1:hover .arrow-right, .blog-link:hover .arrow-right {
+    transform: scale(1.2);
+    transform: translate(20%, 0);
     transition-duration: 0.2s;
   }
   
@@ -618,10 +650,10 @@ button {
   
   .inside h2 {
     color: #1d1001;
-    font-family: "Josefin Sans";
+    font-family: Sansita, sans-serif;
     font-size: 2rem;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
   }
   
   .inside p {
