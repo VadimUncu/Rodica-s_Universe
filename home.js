@@ -124,8 +124,43 @@ window.onscroll = function() {
 
 var burgerMenu = document.getElementById('burger-menu');
 var overlay = document.getElementById('menu');
-burgerMenu.addEventListener('click',function(){
+
+// Toggle menu and overlay on burger menu click
+burgerMenu.addEventListener('click', function () {
   this.classList.toggle("close");
   overlay.classList.toggle("overlay");
+
+  // Update aria-expanded attribute dynamically
+  var isExpanded = this.classList.contains("close");
+  this.setAttribute("aria-expanded", isExpanded);
 });
 
+// Close menu when a link is clicked and content reloads
+var menuLinks = document.querySelectorAll('#menu a');
+
+menuLinks.forEach(function (link) {
+  link.addEventListener('click', function () {
+    // Close the menu and overlay
+    burgerMenu.classList.remove("close");
+    overlay.classList.remove("overlay");
+
+    // Update aria-expanded attribute dynamically
+    burgerMenu.setAttribute("aria-expanded", "false");
+
+    // You can add additional logic here for content reload if needed
+  });
+});
+
+// Make #burger-menu focusable when the width is smaller than 800px
+window.addEventListener('resize', function () {
+  if (window.innerWidth < 800) {
+    burgerMenu.setAttribute('tabindex', '0');
+  } else {
+    burgerMenu.removeAttribute('tabindex');
+  }
+});
+
+// Initial check on page load
+if (window.innerWidth < 800) {
+  burgerMenu.setAttribute('tabindex', '0');
+}

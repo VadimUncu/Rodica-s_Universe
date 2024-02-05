@@ -37,24 +37,24 @@
                   <img class="logo" src="images/logo.png" alt="Logo">
                 </a>
                 <a class="item-right">
-                  <div href="#" class="aboneaza-te">Abonează-te</div>
+                  <div href="#" class="aboneaza-te" tabindex="0">Abonează-te</div>
                 </a>
               </div>
             <nav id="navbar">
                 <div class="main-navigation">
-                  <div id="burger-menu">
+                  <div id="burger-menu" role="button" aria-label="menu" aria-expanded="false" >
                     <span></span>
                   </div>
                     <ul class="navigation-list special" id="menu">
-                        <li><a href="#" class="main_list"><span class="hover">Acasă</span></a></li>
-                        <li><a href="#" class="main_list"><span class="hover">Blog</span></a></li>
+                        <li><a href="#acasa" class="main_list"><span class="hover">Acasă</span></a></li>
+                        <li><a href="#blog" class="main_list"><span class="hover">Blog</span></a></li>
                         <li><a href="#" class="main_list"><span class="hover">Quiz-Zone</span></a></li>
                         <li><a href="#" class="main_list"><span class="hover">Despre mine</span></a></li>
-                        <li><a href="#" class="main_list"><span class="hover">Contacte</span></a></li>
+                        <li><a href="#" class="main_list"><spa  n class="hover">Contacte</span></a></li>
                     </ul>
                     <div class="search-box">
-                        <button class="btn-search" onclick="focusInput()" tabindex="-1"><i class="fa fa-search"></i></button>
-                        <input type="text" class="input-search" placeholder="Type to Search..." id="searchInput">
+                        <button class="btn-search" onclick="focusInput()"><i class="fa fa-search" aria-label="Search"></i></button>
+                        <input type="text" class="input-search" placeholder="Type to Search..." id="searchInput" tabindex="-1">
                     </div>
                 </div>
             </nav>
