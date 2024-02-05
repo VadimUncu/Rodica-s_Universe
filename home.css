@@ -62,7 +62,7 @@ video, img {
   .item-right {
     border-bottom: 1px solid transparent;  /* Border only at the bottom */
     padding: 10px 20px;
-    width: 150px;
+    width: 10rem;
     text-align: center;
     transition: all 0.2s;
     position: relative;
@@ -79,10 +79,14 @@ video, img {
       text-transform: uppercase;
   }
   
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     
-    .aboneaza-te {
+    .banner .logo {
+      right: -1rem;
+    }
+    .item-right {
       font-size: 0.8em;
+      right: -1rem;
     }
     .banner {
      gap: 1rem;
@@ -341,6 +345,10 @@ video, img {
         opacity: 1;
         padding-top:10rem;
         background-color: rgba(243, 239, 245, 0.9);
+      }
+      .special {
+        display: flex;
+        flex-direction: column !important;
       }
       
 }
@@ -1041,15 +1049,15 @@ height: 17.5rem;
 
     .content {
         position: relative;
-        width: 381px;
-  height: 381px;
+        max-width: 381px;
+  max-height: 381px;
     }
 
 
 .image {
   width: 100%;
     max-width: 23.8rem;
-height: 23.8rem;
+max-height: 23.8rem;
 }
 .new-icon {
     position: absolute;
