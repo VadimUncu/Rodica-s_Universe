@@ -3,17 +3,28 @@ document.addEventListener('DOMContentLoaded', function () {
     const dotsContainer = document.querySelector('.dot-container');
     let currentIndex = 0;
 
-    // Create dots based on the number of slides
+    // add names to dots and add dots dinamically
+
+    const slideLabels = ['First Slide', 'Second Slide', 'Third Slide', 'Fourth Slide']; // Add more labels as needed
+
     for (let i = 0; i < carouselItems.length; i++) {
         const dot = document.createElement('button');
         dot.classList.add('dot');
         dotsContainer.appendChild(dot);
-
+    
         // Add click event to each dot
         dot.addEventListener('click', function () {
             showSlide(i);
         });
-    }
+    
+        // Adding ARIA label to each dot
+        if (slideLabels[i]) {
+            dot.setAttribute('aria-label', slideLabels[i]); // Add ARIA label
+        } else {
+            dot.setAttribute('aria-label', `Slide ${i + 1}`); // Add ARIA label
+        }
+} 
+
 
     function showSlide(index) {
         // Hide all carousel items
@@ -59,6 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('nextBtn').addEventListener('click', nextSlide);
     document.getElementById('prevBtn').addEventListener('click', previousSlide);
 
+
     // Touch event handling for swipe gestures
     let touchStartX;
 
@@ -80,6 +92,31 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+window.addEventListener('resize', function() {
+    var prevButton = document.getElementById('prevBtn');
+    var nextButton = document.getElementById('nextBtn');
+    if (window.innerWidth <= 1365) {
+        prevButton.tabIndex = -1;
+        nextButton.tabIndex = -1;
+    } else {
+        prevButton.tabIndex = 0;
+        nextButton.tabIndex = 0;
+    }
+});
+
+// Set initial tabindex based on window width
+window.onload = function() {
+    var prevButton = document.getElementById('prevBtn');
+    var nextButton = document.getElementById('nextBtn');
+    if (window.innerWidth <= 1365) {
+        prevButton.tabIndex = -1;
+        nextButton.tabIndex = -1;
+    } else {
+        prevButton.tabIndex = 0;
+        nextButton.tabIndex = 0;
+    }
+};
 
 
 
@@ -122,45 +159,120 @@ window.onscroll = function() {
     myFunction();
 };
 
+
 var burgerMenu = document.getElementById('burger-menu');
 var overlay = document.getElementById('menu');
 
-// Toggle menu and overlay on burger menu click
-burgerMenu.addEventListener('click', function () {
-  this.classList.toggle("close");
-  overlay.classList.toggle("overlay");
+// Flag to track whether the menu is open
+var isMenuOpen = false;
 
-  // Update aria-expanded attribute dynamically
-  var isExpanded = this.classList.contains("close");
-  this.setAttribute("aria-expanded", isExpanded);
-});
-
-// Close menu when a link is clicked and content reloads
-var menuLinks = document.querySelectorAll('#menu a');
-
-menuLinks.forEach(function (link) {
-  link.addEventListener('click', function () {
-    // Close the menu and overlay
-    burgerMenu.classList.remove("close");
-    overlay.classList.remove("overlay");
-
-    // Update aria-expanded attribute dynamically
-    burgerMenu.setAttribute("aria-expanded", "false");
-
-    // You can add additional logic here for content reload if needed
-  });
-});
-
-// Make #burger-menu focusable when the width is smaller than 800px
-window.addEventListener('resize', function () {
-  if (window.innerWidth < 800) {
+// Function to check window width and set tabindex accordingly
+function setTabIndex() {
+  if (window.innerWidth <= 801) {
     burgerMenu.setAttribute('tabindex', '0');
   } else {
     burgerMenu.removeAttribute('tabindex');
   }
+}
+
+// Toggle menu and overlay on burger menu click
+burgerMenu.addEventListener('click', function () {
+  toggleMenu();
 });
 
-// Initial check on page load
-if (window.innerWidth < 800) {
-  burgerMenu.setAttribute('tabindex', '0');
+// Close menu when a link is clicked
+var menuLinks = document.querySelectorAll('#menu a');
+
+menuLinks.forEach(function (link) {
+  link.addEventListener('click', function () {
+    closeMenu();
+  });
+});
+
+// Trap focus within the menu when it is open
+overlay.addEventListener('keydown', function (event) {
+  if (isMenuOpen && event.key === 'Tab') {
+    var menuItems = overlay.querySelectorAll('a');
+    if (event.shiftKey && document.activeElement === menuItems[0]) {
+      event.preventDefault();
+      burgerMenu.focus();
+    } else if (!event.shiftKey && document.activeElement === menuItems[menuItems.length - 1]) {
+      event.preventDefault();
+      burgerMenu.focus();
+    }
+  }
+});
+
+// Make burger-menu focusable based on window width
+setTabIndex();
+
+// Handle keyboard events for burger-menu
+burgerMenu.addEventListener('keydown', function(event) {
+  if (event.key === 'Tab') {
+    if (isMenuOpen) {
+      var menuItems = overlay.querySelectorAll('a');
+      if (event.shiftKey && document.activeElement === menuItems[0]) {
+        event.preventDefault();
+        burgerMenu.focus();
+      } else if (!event.shiftKey && document.activeElement === menuItems[menuItems.length - 1]) {
+        event.preventDefault();
+        burgerMenu.focus();
+      }
+    } else {
+      // If menu is closed and tab is pressed, allow default tab behavior
+      return;
+    }
+  } else if (event.key === 'Enter' || event.key === ' ') {
+    toggleMenu();
+  }
+});
+
+// Toggle menu function
+function toggleMenu() {
+  burgerMenu.classList.toggle("close");
+  overlay.classList.toggle("overlay");
+  isMenuOpen = !isMenuOpen;
+  burgerMenu.setAttribute("aria-expanded", isMenuOpen);
+  if (isMenuOpen) {
+    overlay.querySelector('li:first-child a').focus();
+  }
 }
+
+// Close menu function
+function closeMenu() {
+  burgerMenu.classList.remove("close");
+  overlay.classList.remove("overlay");
+  isMenuOpen = false;
+  burgerMenu.setAttribute("aria-expanded", "false");
+  burgerMenu.focus();
+}
+
+// Event listener to check and set tabindex when window is resized
+window.addEventListener('resize', setTabIndex);
+
+function toggleMenu() {
+    burgerMenu.classList.toggle("close");
+    overlay.classList.toggle("overlay");
+    isMenuOpen = !isMenuOpen;
+    burgerMenu.setAttribute("aria-expanded", isMenuOpen);
+    // Change the aria-label of burger-menu based on the menu state
+    if (isMenuOpen) {
+      burgerMenu.setAttribute("aria-label", "Close menu");
+      overlay.querySelector('li:first-child a').focus();
+    } else {
+      burgerMenu.setAttribute("aria-label", "Menu");
+      burgerMenu.focus();
+    }
+  }
+  
+  // Function to close the menu
+  function closeMenu() {
+    burgerMenu.classList.remove("close");
+    overlay.classList.remove("overlay");
+    isMenuOpen = false;
+    burgerMenu.setAttribute("aria-expanded", "false");
+    burgerMenu.setAttribute("aria-label", "Menu"); // Reset the aria-label when menu is closed
+    burgerMenu.focus();
+  }
+
+

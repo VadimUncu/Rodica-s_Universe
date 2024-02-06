@@ -15,6 +15,9 @@
 
 <body>
     <div class="container">
+      <a href="#navigation" class="skip-link">Skip to Navigation</a>
+      <a href="#main-content" class="skip-link">Skip to Content</a>
+      <a href="#footer" class="skip-link">Skip to Footer</a>
         <header class="navigation">
             <video autoplay muted loop class="video">
                 <source src="images/background.mp4" type="video/mp4" />
@@ -34,7 +37,7 @@
                   </a>
                 </div>
                 <a href="#">
-                  <img class="logo" src="images/logo.png" alt="Logo">
+                  <h1><img class="logo" src="images/logo.png" alt="Rodica’s Universe"></h1>
                 </a>
                 <a class="item-right">
                   <div href="#" class="aboneaza-te" tabindex="0">Abonează-te</div>
@@ -46,7 +49,7 @@
                     <span></span>
                   </div>
                     <ul class="navigation-list special" id="menu">
-                        <li><a href="#acasa" class="main_list"><span class="hover">Acasă</span></a></li>
+                        <li><a href="#acasa" class="main_list" id="navigation"><span class="hover">Acasă</span></a></li>
                         <li><a href="#blog" class="main_list"><span class="hover">Blog</span></a></li>
                         <li><a href="#" class="main_list"><span class="hover">Quiz-Zone</span></a></li>
                         <li><a href="#" class="main_list"><span class="hover">Despre mine</span></a></li>
@@ -59,11 +62,10 @@
                 </div>
             </nav>
         </header>
-        <main>
+        <main id="main-content">
             <div class="container1">
                 <div class="carousel">
-                    <button><img class="arrow-right1" src="images/right_arrow.svg" id="nextBtn" /></button>
-                    <button><img class="arrow-right2" src="images/left_arrow.svg" id="prevBtn" /></button>
+                    <button id="prevBtn" aria-label="previous slide" class="arrow-right2"><img src="images/left_arrow.svg"/></button>
                     <div class="carousel2 fade" style="background-image: url(images/carousel.png); background-size: cover;background-repeat: no-repeat;">
                         <div class="c-content">
                             <span class="c-span">Despre viață</span>
@@ -87,7 +89,20 @@
                               <img src="images/right_arrow.svg" class="arrow-right">
                             </a>
                       </div>
-                  </div>
+                    </div>
+                    <div class="carousel2 fade" style="background-image: url(images/fram3.png); background-size: cover;background-repeat: no-repeat;">
+                      <div class="c-content">
+                          <span class="c-span">Despre viață</span>
+                            <h2 class="c-title">Trăiește-ți viața pe deplin</h2>
+                            <p class="c-text">Trăiește-ți viața cu pasiune și autenticitate. Fiecare zi reprezintă o oportunitate de a descoperi, de a învăța și de a experimenta. Nu amâna fericirea pentru mai târziu.
+                            </p>
+                            <a href="#" class="c-link">
+                              Citește acest articol
+                              <img src="images/right_arrow.svg" class="arrow-right">
+                            </a>
+                      </div>
+                    </div>
+                    <button id="nextBtn" class="arrow-right1" aria-label="next slide"><img src="images/right_arrow.svg" /></button>
                   <div class="dot-container">
                     <!-- Buttons will be dynamically added here -->
                 </div>
@@ -227,23 +242,23 @@
             <div class="instagram_post">
                 <a href="#instagram" class="content" target="_blank">
                     <img src="images/new-icon.svg" alt="" class="new-icon">
-                    <img src="images/frame1.png" alt="Avatar" class="image">
+                    <img src="images/frame1.png" alt="" class="image">
                     <div class="overlay">Vezi aceasta postare pe <br><img class="frame11" src="images/instagram_icon.svg"> Instagram</div>
                 </a>
                   <a href="#instagram" class="content" target="_blank">
                     <img src="images/new-icon.svg" alt="" class="new-icon">
-                    <img src="images/image2.png" alt="Avatar" class="image">
+                    <img src="images/image2.png" alt="" class="image">
                     <div class="overlay">Vezi aceasta postare pe <br><img class="frame11" src="images/instagram_icon.svg"> Instagram</div>
                   </a>
                   <a href="#instagram" class="content" target="_blank">
                     <img src="images/new-icon.svg" alt="" class="new-icon">
-                    <img src="images/image13.png" alt="Avatar" class="image">
+                    <img src="images/image13.png" alt="" class="image">
                     <div class="overlay">Vezi aceasta postare pe <br><img class="frame11" src="images/instagram_icon.svg"> Instagram</div>
                   </a>
             </div>
             </div>
         </main>
-        <footer class="footer">
+        <footer class="footer" id="footer">
             <div class="line-1"></div>
                 <img class="logo" src="images/logo.png" alt="Logo">
             <div class="footer-items">
