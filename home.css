@@ -487,7 +487,7 @@ button {
 
 
 .c-span {
-    color: var(--accent, #b6946e);
+    color: #89663e;
     text-align: left;
     font-family: "Josefin Sans";
     font-size: 13px;
@@ -585,7 +585,7 @@ justify-content: space-between;
 }
  
 .blog-item span {
-  color: #B68349;
+  color: #89663e;
 font-family: "Josefin Sans";
 font-size: 1rem;
 font-style: normal;
@@ -717,7 +717,7 @@ bottom: 0.5rem;
   }
   
   .inside span {
-    color: var(--Accent, #b6946e);
+    color: var(--Accent, #89663e);
     font-family: "Josefin Sans";
     font-size: 0.8125rem;
     font-style: normal;
@@ -896,7 +896,7 @@ margin-bottom: 2rem;
     height: 41.0625rem; }
   
   .text01 {  display: flex;
-    color: var(--Accent, #B6946E);
+    color: var(--Accent, #89663e);
 font-family: "Josefin Sans";
 font-size: 0.8125rem;
 font-style: normal;
@@ -945,7 +945,7 @@ align-items: center;
   }
 
 .date {
-color: #C4B4A2;
+color: #89663e;
 font-family: "Josefin Sans";
 font-size: 0.8125rem;
 font-style: normal;
@@ -980,7 +980,7 @@ height: 17.5rem;
   }
   
   .text011 { 
-    color: var(--Accent, #B6946E);
+    color: var(--Accent, #89663e);
 font-family: "Josefin Sans";
 font-size: 0.8125rem;
 font-style: normal;
@@ -1189,7 +1189,7 @@ font-weight: 700;
 
 
 .rodica-copyrighted {
-    color: #b8a794;
+    color: #89663e;
     font-family: Questrial;
     font-size: 14px;
     font-weight: 400;
