@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function () {
     const carouselItems = document.querySelectorAll('.carousel2');
     const dotsContainer = document.querySelector('.dot-container');
