@@ -178,6 +178,7 @@ video, img {
     padding: 0 1rem;
     align-items: center;
     position: relative;
+    overflow: scroll;
 }
 
 .navigation-list li {
